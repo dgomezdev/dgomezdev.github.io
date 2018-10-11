@@ -1,0 +1,297 @@
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg)
+    }
+
+    20%{
+        transform: rotate(45deg)
+    }
+    90%{
+        transform: rotate(45deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+    
+}
+
+@keyframes parpadeo {
+    0% {
+        /* opacity: 1; */
+        filter: blur(0px);
+        /* transform: scale(1,1); */
+
+    }
+    100% {
+        /* opacity: 0; */
+        filter: blur(2px);
+       /*  transform: scale(1.2,1.8); */
+    }
+}
+
+@keyframes levitar {
+    0%{
+        transform: scale(1);
+    }
+    55%{
+        transform: scale(.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate360 {
+       
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+@keyframes typedjsBlink {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes typedjsBlink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes luz {
+    0%{
+        transform: scale(.5);
+        opacity: 1;
+    }
+
+    80% {
+        transform: scale(.8);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+.typed-cursor {
+    opacity: 1;
+}
+
+p{
+    color: white;
+}
+
+.typed-cursor.typed-cursor--blink {
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+.puntas{
+    animation: rotate360 3s linear infinite;
+    animation-delay: 7s;
+    transform-origin: 50% 50%;
+    filter: blur(7px);
+    
+}
+
+.cls-2 {
+    fill: none;
+    stroke: white;
+    stroke-miterlimit: 10;
+}
+
+
+.insidei {
+    transition: .5s;
+    fill: rgba(0, 89, 255, 0.555);
+    filter: blur(10px);
+    transform: scale(0.7);
+    transform-origin: 50% 50%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(26, 26, 26);
+    font-family: 'Oxygen', sans-serif;
+    overflow: hidden;
+}
+
+.center{
+    text-align: center;
+}
+
+.contenedorx{
+  width: 320px;
+  margin: auto;
+  padding-top: 15vh;
+}
+
+.siri {
+  animation: levitar 2s infinite;
+  animation-delay: 5s;
+  transform-origin: 50% 50%;
+  
+}
+
+.ptest{
+    color: white;
+    text-align: center;
+
+}
+
+#sobrantes,
+#middleline,
+#primeralineaderecha,
+#primeralineaizquierda,
+#segundalineaderecha,
+#segundalineaizquierda,
+#terceralineaderecha,
+#terceralineaizquierda,
+#cuartalineaderecha,
+#cuartalineaizquierda,
+#quintalineaderecha,
+#quintalineaizquierda,
+#puntaIzquierda,
+#puntaDerecha,
+#middle {
+    fill: white;
+}
+
+.rotate {
+    animation: rotate 1s;
+    transform-origin: 50% 50%;
+}
+
+
+.middlepoint {
+    animation: parpadeo 2s ease-out infinite;
+    transform-origin: 50% 50%;
+    animation-delay: 5s; 
+}
+
+.max{
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+}
+
+.conversation{
+    width: 50%;
+    margin: auto;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.borderright{
+    border-radius: 21px 0px 21px 21px;
+}
+
+.borderleft{
+    border-radius: 0px 21px 21px 21px;
+}
+
+.right{
+    text-align: right;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.cls-x{
+    fill: black;
+}
+
+.saltarintro{
+    text-align: center;
+    font-weight: bold;
+    font-size: .7em;
+    text-decoration-line: underline;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.saltarintro:hover{
+    color: white;
+}
+
+.newby{
+    stroke: rgb(0, 87, 250);
+    stroke-miterlimit: 10;
+}
+
+.newbz{
+    animation: luz 5s infinite ease-out;
+    stroke: rgb(9, 77, 204);
+    stroke-miterlimit: 10;
+    fill: none;
+    filter: blur(5px);
+    transform-origin: 50% 50%;
+}
+
+.barra{
+    height: 5px;
+    width: 100%;
+    background:rgb(9, 77, 204);
+}
+
+#derechas {
+    background: rgb(9, 77, 204);
+    height: 100vh;
+    transition: .4s;
+}
+
+input[type=text] {
+    background: rgb(39, 39, 39);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px solid rgb(9, 77, 204);
+    border-radius: 2px 2px 0px 0px;
+    transition: 0.5s;
+    outline: none;
+    color: white;
+}
+
+input[type=text]:focus {
+    background: none;
+
+}
