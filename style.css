@@ -136,7 +136,7 @@ body{
     padding: 0;
     background: rgb(26, 26, 26);
     font-family: 'Oxygen', sans-serif;
-    overflow: hidden;
+    overflow: hidden;transition: .4s ease-in-out;
 }
 
 .center{
@@ -272,7 +272,7 @@ button:hover {
 #derechas {
     background: rgb(9, 77, 204);
     height: 100vh;
-    transition: .4s;
+    transition: .4s ease-in-out;
 }
 
 input[type=text] {
@@ -293,5 +293,19 @@ input[type=text] {
 
 input[type=text]:focus {
     background: none;
+
+}
+
+.closeicon{
+    text-align: right;
+    padding: 0px 30px 30px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.closeicon:hover{
+    text-shadow: 2px 2px #ff0000;
+    transition: .4s;
 
 }

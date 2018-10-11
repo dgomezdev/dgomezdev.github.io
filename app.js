@@ -174,3 +174,13 @@ function dividirPantalla(){
 }
 
 
+// quitar división de pantalla
+
+function desdividir(){
+    $('#fila').removeClass('row');
+    $('#izquierda').removeClass('col');
+    $('#derechas').removeClass('col');
+}
+
+
+
