@@ -17,15 +17,13 @@
 
 @keyframes parpadeo {
     0% {
-        /* opacity: 1; */
-        filter: blur(0px);
-        /* transform: scale(1,1); */
-
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1,0);
     }
     100% {
-        /* opacity: 0; */
-        filter: blur(2px);
-       /*  transform: scale(1.2,1.8); */
+        transform: scale(1,1);
     }
 }
 
@@ -94,13 +92,33 @@
         opacity: 0;
     }
 }
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: 'Oxygen', sans-serif;
+    overflow: hidden; 
+    transition: .4s ease-in-out;
+}
 
 .typed-cursor {
     opacity: 1;
 }
 
-p{
+p,
+h1,
+h2,
+h3,
+ul{
     color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.justify{
+    text-align: justify;
 }
 
 .typed-cursor.typed-cursor--blink {
@@ -125,18 +143,27 @@ p{
 
 .insidei {
     transition: .5s;
-    fill: rgba(0, 89, 255, 0.555);
+    fill: rgb(11, 78, 202);
     filter: blur(10px);
     transform: scale(0.7);
     transform-origin: 50% 50%;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background: rgb(26, 26, 26);
-    font-family: 'Oxygen', sans-serif;
-    overflow: hidden;transition: .4s ease-in-out;
+.standBy {
+    transition: .5s;
+    fill: rgb(255, 255, 255);
+    filter: blur(10px);
+    transform: scale(0.7);
+    transform-origin: 50% 50%;
+}
+
+
+.seva {
+    transition: .5s;
+    fill: rgb(195, 17, 17);
+    filter: blur(10px);
+    transform: scale(1);
+    transform-origin: 50% 50%;
 }
 
 .center{
@@ -177,7 +204,7 @@ body{
 #puntaIzquierda,
 #puntaDerecha,
 #middle {
-    fill: white;
+    fill: rgb(255, 255, 255);
 }
 
 .rotate {
@@ -187,9 +214,11 @@ body{
 
 
 .middlepoint {
-    animation: parpadeo 2s ease-out infinite;
+    
+    animation-name: parpadeo;
+    animation-duration: .4s;
+    animation-iteration-count: 3;
     transform-origin: 50% 50%;
-    animation-delay: 5s; 
 }
 
 .max{
@@ -270,8 +299,14 @@ button:hover {
 }
 
 #derechas {
-    background: rgb(9, 77, 204);
+    background:rgb(9, 77, 204);
     height: 100vh;
+    transition: .4s ease-in-out;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.transition {
     transition: .4s ease-in-out;
 }
 
@@ -309,3 +344,113 @@ input[type=text]:focus {
     transition: .4s;
 
 }
+
+.nofill{
+    fill: none;
+}
+
+.socialbtn{
+    fill: rgb(255, 255, 255);
+    transform: scale(.8);
+    padding-left: 1vw;
+    padding-right: 1vw;
+    transition: .2s;
+}
+
+.socialbtn:hover{
+    transform: rotate(10deg) scale(1);
+    transition: .2s;
+}
+
+.bottom{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background: #000000;
+  }
+
+  .card{
+      padding-bottom: 10px;
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-top: 15px;
+      margin-right: 25px;
+      border-bottom: 1.4px solid rgba(0, 0, 0, 0.253);
+      transition: .2s;
+    }
+
+  .card:hover{
+      background: #00258b;
+      padding: 20px;
+      transition: .4s;
+  }
+
+  .bottomfix{
+      height: 100px;
+  }
+
+  .cardImg{
+    max-height: 150px;
+    transition: .4s;
+    padding-right: 7.5px;
+  }
+
+  .cardImg:hover{
+    transition: .4s ease-in .2s;
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  .cardInfo{
+    text-align: justify;
+    padding: 0;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .cardInfo{
+      padding: 0;
+  }
+
+  .cardT{
+      margin: 0px;
+      margin-bottom: 5px;
+      padding: 0px;
+      font-size: 1.2em;
+      line-height: 15px;
+  }
+
+  .parrafo{
+      margin: 0;
+      padding-right: 10px;
+  }
+
+.skillss{
+    width: 24px;
+    margin-right: 10px;
+}
+
+#profilepic{
+    text-align: center;
+    padding-top: 15%;
+    background: url(/img/profilebg.jpg);
+    background-size: cover;
+}
+
+.profilepic{
+    border-radius: 100%;
+    border: rgb(9, 77, 204) solid 5px;
+    max-width: 120px;
+    margin-bottom: -10%;
+}
+
+.fixspace{
+    height: 60px;
+}
+
+.contenido{
+    background: rgb(9, 77, 204);
+}
+
