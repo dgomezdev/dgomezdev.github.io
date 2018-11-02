@@ -143,7 +143,7 @@ header {
 }
 
 .bg{
-    background: url(/img/bg.jpg);
+    background: url(../img/bg.jpg);
     background-size: cover;
     height: 80vh;
     margin-bottom: 5%;
@@ -206,7 +206,7 @@ height: 70vh;
     height: 100px;
 }
 #nuestraPractica{
-    background: url(/img/bgbooks.jpg);
+    background: url(../img/bgbooks.jpg);
 }
 #nuestraPractica img{
     width: 450px;
