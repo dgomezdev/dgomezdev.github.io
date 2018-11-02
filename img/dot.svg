@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.54 409.54">
+    <defs>
+        <style>
+            @keyframes bggg{
+            0%{
+            transform: scale(0);
+            fill: #131314;
+            }
+            50%{
+            transform: scale(.5);
+            fill: #202020;
+            }
+            100%{
+            transform: scale(0);
+            fill: #131314;
+            }
+            }
+
+            .cls-1 {
+                fill: none;
+            }
+
+            .dottt{
+                animation: bggg .4s infinite;
+                fill: black;
+            }
+        </style>
+    </defs>
+    <title>dot</title>
+    <g id="Capa_2" data-name="Capa 2">
+        <g id="Capa_1-2" data-name="Capa 1">
+            <rect class="cls-1" width="409.54" height="409.54" />
+            <circle class="dottt" cx="204.77" cy="204.77" r="50.83" />
+        </g>
+    </g>
+</svg>

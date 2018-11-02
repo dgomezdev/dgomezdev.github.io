@@ -1,0 +1,672 @@
+/* ==========================================================
+.Second { color: #2C2C2E;}
+.Main { color: #007BCA;}
+.Bg {color: #131314} 
+font-family: 'Lato', sans-serif;
+font-family: 'Work Sans', sans-serif;
+==============================================================*/
+
+/* ==============================================================
+
+Animaciones
+
+============================================================== */
+@keyframes preloader{
+    0%{
+        border: solid #005285 1px ;
+        transform: rotate(-15deg);
+     
+    }
+
+
+    100%{
+        border: solid #005285 100px ;
+        transform: rotate(345deg);
+        opacity: 0;
+    }
+}
+@keyframes aparecer {
+
+    0% {
+        opacity: 0;
+        transform: translate(50px, 100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+}
+
+@keyframes wink {
+    0% {
+        border-left: rgba(0, 125, 202, 0) solid 4px;
+    }
+
+    50% {
+        border-left: rgb(0, 125, 202) solid 4px;
+    }
+
+    100% {
+        border-left: rgba(0, 125, 202, 0) solid 4px;
+    }
+}
+
+@keyframes girar {
+    
+    from {
+        transform: rotate(25deg)
+    }
+
+    to {
+        transform: rotate(35deg);
+
+    }
+}
+
+@keyframes refill {
+    0% {
+        fill: rgb(31, 31, 31);
+        transform: scale(1);
+    }
+
+    50% {
+        fill: rgb(34, 34, 34);
+        transform: scale(1);
+    }
+
+    100% {
+        fill: rgb(31, 31, 31);
+        transform: scale(1);
+    }
+}
+
+@keyframes respira {
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(.9)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes node {
+
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+        stroke-width: 5px;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.aparecer {
+    animation: aparecer .8s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+/* ==============================================================
+
+Main Style
+
+============================================================== */
+
+
+nav{
+    font-family: 'Work Sans', sans-serif;
+    transition: .4s;
+}
+
+nav a{
+    margin-left: 10px;
+}
+
+nav a:hover{
+    border-bottom: #005285 solid 2px;
+    transition: .4s;
+}
+
+nav a:focus{
+    border-bottom: #ffffff solid 2px;
+    transition: .4s;
+}
+
+nav a:active{
+    border-bottom: #ffffff solid 2px;
+    transition: .4s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+body {
+    background: #131314;
+    
+   
+}
+
+.mailme{
+    background: none;
+    color: #007ac6;
+    border: #007ac6 2px solid;
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+    transition: .4s;
+}
+
+.mailme:hover{
+    background: #007ac6;
+    color: wheat;
+    transition: .4s;
+}
+
+.bg-dot {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: -99999;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    transition: .4s;
+
+}
+main{
+    transition: .4s;
+}
+.fixed {
+    position: fixed;
+}
+
+
+.menu-btn {
+    width: 40px;
+    cursor: pointer;
+}
+
+.header-container {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 1.5%;
+}
+.social-bar {
+    position: fixed;
+    margin-left: 2.5%;
+    height: 100vh;
+    margin-top: calc(50vh - 67.4px);
+}
+
+.social-icon {
+    margin-top: 10px;
+    transform: scale(.8);
+    transition: .4s;
+
+}
+
+.social-icon:hover {
+
+    transform: scale(.9);
+    transition: .1s;
+}
+
+.mobile-foot{
+
+    display: none;
+}
+
+.mail{
+    font-family: 'Lato', sans-serif;
+    margin-left: 10px;
+}
+
+/* ==============================================================
+
+ZEUS
+
+============================================================== */
+
+.zeus {
+    width: 420px;
+    height: 420px;
+}
+
+.zeus-container {
+    animation: respira 15s infinite ease-in-out;
+    transform-origin: 50% 50%;
+}
+
+.cls-1,
+.cls-2 {
+    fill: none;
+}
+
+.cls-1 {
+    stroke: #007ac6;
+}
+
+.cls-3 {
+    fill: #131314;
+    stroke-width: 0.75px;
+}
+
+#outside-circle {
+    animation: girar 20s linear infinite;
+    transform-origin: 50% 50%;
+
+}
+
+#middle-circle {
+    animation: girar 25s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+#inside-circle {
+    animation: girar 40s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.outside-node {
+    fill: #007ac6;
+    transform-origin: 50% 50%;
+}
+
+.middle-node {
+    fill: #006aac;
+    transform-origin: 50% 50%;
+}
+
+.inside-node {
+    fill: #005285;
+    transform-origin: 50% 50%;
+}
+
+
+progress {
+    display: block;
+    width: 350px;
+    height: 3px;
+    padding: 1px;
+    border: 0 none;
+    background: #878787;
+}
+
+progress::-moz-progress-bar {
+    border-radius: 12px;
+    background: #FFF;
+
+}
+
+.bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar-container p {
+    color: #5a5a5a;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.prog{
+    display: flex;
+    align-items: center;
+}
+
+#preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mapa{
+    width: 420px;
+}
+
+.mapa-circle5{
+    animation: node 4s infinite linear;
+    opacity: 0;
+    stroke: #FFF;
+    stroke-width: 0px;
+    fill: none;
+}
+
+.azul {
+    color: #005285;
+}
+
+a{
+    color: #007ac6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.fondo {
+    z-index: -3000;
+}
+
+.hide{
+    display: none;
+    transition: .4s;
+}
+
+.hide-on-load{
+    display: none;
+    transition: .4s;
+}
+
+#preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transition: .4s;
+
+}
+
+.cargando{
+    animation: node 1s infinite ease;
+    color: #131314;
+}
+
+.preloader{
+    height: 150px;
+    width: 150px;
+    animation: preloader 1.4s ease-in-out infinite;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-15deg);
+}
+
+/* ======================================================================== */
+
+@media (min-width: 1231px) {
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 24px;
+    height: calc(100vh - 24px);
+}
+
+
+
+.main-title {
+    width: 50%;
+}
+
+.derecha {
+    width: 50%;
+    padding-right: 40px;
+    border-right: #007ac6 solid 3px;
+}
+
+.derecha-2 {
+    width: 50%;
+    padding-left: 40px;
+    border-left: #007ac6 solid 3px;
+}
+
+.title {
+    font-size: 7.063em;
+    line-height: 0px;
+    
+}
+
+.main-subtitle {
+    border-left: rgba(0, 125, 202, 0) solid 4px;
+    animation: wink 1s infinite linear;
+    font-size: 20px;
+    padding-top: .3px;
+    padding-bottom: .1px;
+    margin-left: 4.3em;
+    padding-left: 1em;
+    line-height: 12px;
+}
+
+.fix {
+    height: 100vh;
+}
+
+.titulo {
+    margin-bottom: -15px;
+    border-left: #007ac6 solid 3px;
+    padding-left: 15px;
+    
+}
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+}
+@media (max-width: 1230px) {
+    main{
+        width: 75%;
+        margin: auto;
+    }
+    .main-title{
+        text-align: center;
+    }
+    .center-content{
+        text-align: center;
+    }
+
+    .zeus{
+        margin-top: 5%;
+        width: 360px;
+        height: 360px;
+    }
+    .title,
+    .main-subtitle {
+        display: inline;
+    }
+
+    .clon{
+        display: none;
+    }
+
+    progress {
+        display: block;
+        width: 47.438em;
+        height: 3px;
+        padding: 1px;
+        border: 0 none;
+        background: #878787;
+    }
+
+    .full-height{
+        height: 100vh;
+    }
+    .topfix{
+        height: 50px;
+    }
+}
+
+  
+  @media (max-width: 1078px) {
+    
+    progress {
+        display: block;
+        width: 36em;
+        height: 3px;
+        padding: 1px;
+        border: 0 none;
+        background: #878787;
+    }
+    .topfix{
+        height: 40px;
+    }
+  }
+
+    
+  @media (max-width: 990px) {
+    
+    progress {
+        display: flex;
+        flex-wrap: wrap;
+        width: 24em;
+        height: 3px;
+        padding: 1px;
+        border: 0 none;
+        background: #878787;
+    }
+    .topfix{
+        height: 40px;
+    }
+  }
+  
+  @media (max-width: 730px) {
+    
+    progress {
+        display: inline-block;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 3px;
+        padding: 1px;
+        border: 0 none;
+        background: #878787;
+    }
+    .bar-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        align-items: inherit;
+
+
+    }
+    .bar-container h3{
+        text-align: left;
+    }
+    .topfix{
+        height: 40px;
+    }
+  }
+  
+
+  
+  @media (max-width: 415px) {
+    .social-bar,
+    .header-container {
+        display: none;
+    }
+
+    .zeus,
+    .mapa,
+    .mobile
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    .title,
+    .main-subtitle{
+        padding: 0;
+        margin: 0;
+    }
+
+    .fixed-bottom {
+        display: inherit;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+      }
+
+    .mobile-foot{
+        width: 100%;
+        height: 80px;
+    }
+    .fix-mobile-foot{
+        height: 90px;
+    }
+
+    .to-right{
+        text-align: end;
+        margin-right: 15%;
+    }
+    .to-right a{
+        position: absolute;
+    }
+
+    .change .one{
+        transform: translateY(-80px) scale(.8);
+        transition: .4s;
+    }
+
+    .change .two{
+        transform: translateX(-80px) scale(.8);
+        transition: .4s;
+    }
+
+    .change .tres{
+        transform: translate(-70px ,-70px) scale(.8);
+        transition: .4s;
+    }
+
+    .one,
+    .two,
+    .tres{
+        transition: .4s;
+    }
+
+    .cero{
+        z-index: 10000;
+        cursor: pointer;
+    }
+
+    body p{
+        text-align: justify; 
+    }
+
+    .topfix{
+        height: 60px;
+    }
+
+    .mail{
+        display: none;
+    }
+  }
+
+
