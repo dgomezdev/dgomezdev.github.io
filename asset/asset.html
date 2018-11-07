@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PMC ASSET MANAGEMENT CORP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700" rel="stylesheet">
+<!--     <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
-    <div class="body">
-        <div class="fix-header"></div>
-        <header class="row">
+        <div id="backToTop"><a href="#top">volver arriba</a></div>
+        <div id="top" class="fix-header"></div>
+        <header class="row fixed">
             <div class="container">
                 <div class="flex-cont header">
 
@@ -29,8 +31,8 @@
                             <!--  <img class="social-icon" src="https://png.icons8.com/ios-glyphs/18/000000/facebook.png"> -->
                         </div>
                         <nav>
-                            <a class="nav-item" href="#inicio">Inicio</a><span>|</span>
-                            <a class="nav-item" href="#nuestra-practica">Nuestra Practica</a><span>|</span>
+                            <a class="nav-item" href="#top">Inicio</a><span>|</span>
+                            <a class="nav-item" href="#nuestrasPracticas">Nuestra Practica</a><span>|</span>
                             <a class="nav-item" href="#soluciones">Soluciones</a><span>|</span>
                             <a class="nav-item" href="#recursos">Recursos</a><span>|</span>
                             <a class="nav-item" href="#contacto">Contacto</a>
@@ -39,10 +41,12 @@
                 </div>
             </div>
         </header>
+        <div class="body">
         <div class="row" id="inicio">
             <div class="container cartas">
 
-                <div class="flex-cont cards">
+                <a href="#quienesSomos">
+                    <div class="flex-cont cards">
                     <div class="border">
                         <div class="card">
                             <img src="img/uno.jpg" alt="">
@@ -51,7 +55,8 @@
                             </div>
                         </div>
                     </div>
-
+                </a>
+                <a href="#nuestrasPracticas">
                     <div class="border">
                         <div class="card">
                             <img src="img/dos.jpg" alt="">
@@ -60,7 +65,8 @@
                             </div>
                         </div>
                     </div>
-
+                </a>
+                <a href="#asesoriaConsultoria">
                     <div class="border">
                         <div class="card">
                             <img src="img/tres.jpg" alt="">
@@ -69,8 +75,9 @@
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
-
+                <a href="#nuestroEquipo">
                 <div class="flex-cont cards">
                     <div class="border">
                         <div class="card">
@@ -80,16 +87,18 @@
                             </div>
                         </div>
                     </div>
-
+                    </a>
+                    <a href="#nuestraPerspectiva">
                     <div class="border">
                         <div class="card">
                             <img src="img/cinco.jpg" alt="">
                             <div>
-                                <p id="captionCard">Nuestra Perspetciva</p>
+                                <p id="captionCard">Nuestra Perspectiva</p>
                             </div>
                         </div>
                     </div>
-
+                    </a>
+                    <a href="#contacto">
                     <div class="border">
                         <div class="card">
                             <img src="img/seis.jpg" alt="">
@@ -98,6 +107,7 @@
                             </div>
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
             <div class="frase-enganche">
@@ -107,7 +117,6 @@
         </div>
         <div class="row bg">
             <div class="container">
-                <div class="fix300"></div>
                 <div class="" id="asset">
                     <h2>PMC Asset Management</h2>
                     <p>Con más de 28 años de experiencia en el mercado corporativo internacional, PMC Asset Management
@@ -120,7 +129,7 @@
         </div>
 
         <div class="row" id="quienesSomos">
-            <div class="container">
+            <div class="container fixh">
                 <div class="flex-cont">
                     <div class="izquierda">
                         <h2>Quienes Somos</h2>
@@ -149,9 +158,9 @@
             </div>
         </div>
 
-        <div class="row" id="nuestraPractica">
-            <div class="container rowfix">
-                <div class="fix3"></div>
+        <div class="row" id="nuestrasPracticas">
+            <div class="container fixh">
+                <div>
                 <h2 class="center-text title-center">Nuestras Prácticas</h2>
                 <p class="center-text">A partir de un diagnóstico específico, en el que PMC Asset Management Corp.,
                     facilita el proceso y
@@ -161,9 +170,9 @@
                     investigaciones, incorporación de profesionales capacitados en la materia y estudios específicos ya
                     sea de mercado, financieros, entre otros.
                     <br><br>
-                    <img class="" src="img/ciclo2.png" alt="">
+                    <img class="img-practicas" src="img/ciclo2.png" alt="">
                 </p>
-
+            </div>
             </div>
 
         </div>
@@ -187,7 +196,7 @@
         </div>
 
         <div class="row" id="asesoriaConsultoria">
-            <div class="container">
+            <div class="container fixh">
                 <div class="fix3"></div>
                 <div class="flex-cont asfix">
                     <div class="izquierda asyconstext">
@@ -228,8 +237,8 @@
             </div>
         </div>
 
-        <div class="row" id="asesoriaConsultoria">
-            <div class="container">
+        <div class="row" id="nuestroEquipo">
+            <div class="container fixh">
                 <div class="fix3"></div>
                 <div class="flex-cont asfix">
                     <div class="derecha">
@@ -252,8 +261,8 @@
             </div>
         </div>
         <div class="row" id="nuestraPerspectiva">
-            <div class="container rowfix">
-                <div class="fix3"></div>
+            <div class="container rowfix fixh">
+                <div class="">
                 <h2 class="center-text title-center2">Nuestras Perspectiva</h2>
                 <p class="center-text">A partir de un diagnóstico específico, en el que PMC Asset Management Corp.,
                     facilita el proceso y
@@ -267,21 +276,27 @@
                 </p>
 
             </div>
-
+        </div>
         </div>
 
         <div class="row orange"></div>
         <div class="row" id="razones">
             <div class="container center-text">
                 <h2 class="exc">¡LAS PRINCIPALES RAZONES PARA CONTACTARNOS AHORA!</h2>
-                <p id="slider"> Experiencia en el sector corporativo por más de 28 años </p>
-                <a class="btn">Contactar</a>
+                <div id="sliderCont">
+                        <p id="item1">Experiencia en el sector corporativo por más de 28 años </p>
+                        <p id="item2">Nuestro trabajo se enmarca en la privacidad, confidencialidad y protección de la información de cada uno de nuestros clientes</p>
+                        <p id="item3">Orientación profesional y especializada de cómo proteger sus activos y patrimonio</p>
+                        <p id="item4">Hacemos el uso más eficiente de las últimas tecnologías</p>
+                        <p id="item5">Contamos con una amplia red de aliados y agentes a nivel internacional</p>
+                        <p id="item6">Beneficios a largo plazo a través de relaciones de confianza</p>
+                </div>
+                <a class="btn" href="#contacto">Contactar</a>
             </div>
         </div>
 
-        <div class="row" id="asesoriaConsultoria">
-            <div class="container">
-                <div class="fix3"></div>
+        <div class="row" id="contacto">
+            <div class="container fixh">
                 <div class="flex-cont asfix">
                     <div class="izquierda asyconstext">
                         <img class="contacto" src="img/contacto.jpg" alt="">
@@ -323,6 +338,8 @@
     <!--  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script> -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
     <script src="js/main.js"></script>
     </div>
 </body>
