@@ -1,0 +1,301 @@
+body {
+    font-family: 'Lato', sans-serif;
+    max-width: 1366px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+p{
+    font-size: 20px;
+    color: #464646;
+    line-height: 140%;
+}
+
+.white{
+    color: white;
+}
+
+.row{
+    width: 100%;
+}
+
+.fixh{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-section{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* ==================================================================================
+HEADER
+=====================================================================================*/
+
+.logocont {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    z-index: 30;
+}
+
+.fullimg {
+    background: url(/img/uno.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.bluelayer {
+    background: rgba(41, 122, 251, 0.561);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin-top: -100vh;
+    z-index: 20;
+}
+
+.headerp{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin-top: -100vh;
+    color: white;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.textcont{
+    margin-top: 35vh;
+    margin-left: 10vw;
+    width: 38vw;
+    height: 100vh;
+}
+
+.textcont h2{
+    font-size: 42px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.textcont p{
+    margin: 0;
+    padding: 0;
+}
+
+.separador-blanco{
+    border-bottom: solid white 3px;
+    width: 80px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+/* ==================================================================================
+SECTION 01
+=====================================================================================*/
+
+.separador-azul{
+    width: 80px;
+    border: #172A48 solid 1.7px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 55px;
+}
+
+.container-section h2{
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.container-section p{
+    font-weight: 300;
+    width: 460px;
+    font-size: 18px;
+}
+
+.logogrande{
+    width: 500px;
+    height: 500px;
+}
+
+.contenido-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aligncenter{
+    text-align: justify;
+}
+
+/* ==================================================================================
+SECTION 02
+=====================================================================================*/
+
+#soluciones-pmc-asset-management{
+    background: rgb(238, 238, 238);
+}
+
+.altura{
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.soluciones-cont h2{
+    padding-top: 5%;
+    text-align: center;
+    color: #172A48;
+    font-size: 36px;
+}
+
+.esquema{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column h4{
+    background: #172A48;
+    color: white;
+    padding: 20px 35px 20px 35px;
+    text-align: center;
+    margin: auto;
+}
+
+.column p{
+    text-align: center;
+    width: 190px;
+    margin: auto;
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+.columnfix h4{
+    padding: 12px 35px 12px 35px;
+    text-align: center;
+}
+
+.arrow-down{
+    border-right: 4px #172A48 solid;
+    border-bottom: 4px #172A48 solid;
+    height: 24px;
+    width: 24px;
+    transform: rotate(45deg);
+    margin: auto;
+}
+
+
+.arrow-up{
+    border-right: 4px #172A48 solid;
+    border-bottom: 4px #172A48 solid;
+    height: 24px;
+    width: 24px;
+    transform: rotate(-135deg);
+    margin: auto;
+}
+
+.bottom-column{
+    font-weight: 700;
+    text-align: center;
+    background: #172A48;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 600px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.bottom-column p{
+    color: white;
+}
+
+.bottom-column span{
+    line-height: 2px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==================================================================================
+SECTION 03
+=====================================================================================*/
+
+#conocer-mas{
+    border: #646464 solid 7px;
+    margin-top: 5%;
+}
+.conocer-mas-bg{
+    background: url(/img/mesa.jpg);
+    background-size: cover;
+    filter: blur(3px);
+    height: 40vh;
+    width: 100%;
+    margin-bottom: -40vh;
+    position: absolute;
+    z-index: -2;
+    
+}
+
+.conocer-mas-blayer{
+    background: rgba(0, 0, 0, 0.39);
+    height: 40vh;
+    margin-bottom: -40vh
+}
+
+.altura50{
+    height: 40vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.altura50 p{
+    color: white;
+}
+
+.inputs{
+    text-align: center;
+}
+
+/* ==================================================================================
+SECTION 04
+=====================================================================================*/
+
+.ayc-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ayc-img{
+    height: 460px;
+    width: 400px;
+    background: url(/img/pantallas.jpg);
+    margin: 20px;
+}
+
+.ayc-text{
+    width: 400px;
+}
+
+.ayc-cont-flex{
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
