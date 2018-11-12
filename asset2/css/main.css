@@ -11,6 +11,16 @@ p{
     line-height: 140%;
 }
 
+
+ul,li{
+    font-size: 20px;
+    color: #464646;
+}
+
+li{
+    margin-top: 24px;
+}
+
 .white{
     color: white;
 }
@@ -43,6 +53,8 @@ HEADER
     justify-content: center;
     padding-top: 5vh;
     z-index: 30;
+    max-width: 1366px;
+/*     margin-bottom: -110px; */
 }
 
 .fullimg {
@@ -54,7 +66,7 @@ HEADER
 
 .bluelayer {
     background: rgba(41, 122, 251, 0.561);
-    position: absolute;
+ /*    position: absolute; */
     height: 100vh;
     width: 100%;
     margin-top: -100vh;
@@ -62,7 +74,7 @@ HEADER
 }
 
 .headerp{
-    position: absolute;
+ /*    position: absolute; */
     height: 100vh;
     width: 100%;
     margin-top: -100vh;
@@ -145,6 +157,8 @@ SECTION 02
 
 #soluciones-pmc-asset-management{
     background: rgb(238, 238, 238);
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
 .altura{
@@ -152,10 +166,10 @@ SECTION 02
     align-items: center;
     width: 80%;
     margin: auto;
+    
 }
 
 .soluciones-cont h2{
-    padding-top: 5%;
     text-align: center;
     color: #172A48;
     font-size: 36px;
@@ -228,34 +242,49 @@ SECTION 02
     padding: 0;
 }
 
+.img-contsc{
+    width: 50%;
+    margin: auto;
+}
+.soluciones-cont img{
+    height: 240px;
+}
+
 /* ==================================================================================
 SECTION 03
 =====================================================================================*/
 
 #conocer-mas{
     border: #646464 solid 7px;
-    margin-top: 5%;
 }
 .conocer-mas-bg{
     background: url(../img/mesa.jpg);
     background-size: cover;
-    filter: blur(3px);
-    height: 40vh;
+    filter: blur(2px);
+    height: 60vh;
     width: 100%;
-    margin-bottom: -40vh;
-    position: absolute;
+    margin-bottom: -60vh;
     z-index: -2;
     
 }
 
 .conocer-mas-blayer{
     background: rgba(0, 0, 0, 0.39);
-    height: 40vh;
-    margin-bottom: -40vh
+    height: 60vh;
+    margin-bottom: -60vh
+}
+
+.conocer-mas-cont h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.conocer-mas-cont p{
+    text-align: center;
 }
 
 .altura50{
-    height: 40vh;
+    height: 60vh;
     width: 80%;
     margin: auto;
     display: flex;
@@ -269,12 +298,59 @@ SECTION 03
 }
 
 .inputs{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    width: 380px;
+    height: 36px;
+}
+
+.inputs-flex div{
+    margin-left: 48px;
+}
+.inputs-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background: #172A48;
+    padding: 15px 30px;
+    color: white;
+    transition: .4s;
+}
+
+.btn{
+    margin-top: 28px;
+}
+button:hover{
+    background: white;
+    color: #172A48;
+    transition: .4s;
 }
 
 /* ==================================================================================
 SECTION 04
 =====================================================================================*/
+#asesoria-y-consultoria{
+    background: #dfdfdf;
+}
+.ayc-cont-flex{
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+}
 
 .ayc-cont{
     display: flex;
@@ -282,20 +358,270 @@ SECTION 04
 }
 
 .ayc-img{
-    height: 460px;
-    width: 400px;
+    height: 90vh;
+    width: 450px;
     background: url(../img/pantallas.jpg);
-    margin: 20px;
+    background-size: cover;
+    margin-top: 33.30px;
+    align-items: center;
 }
 
 .ayc-text{
-    width: 400px;
+    width: 420px;
 }
 
-.ayc-cont-flex{
+.ayc-text p{
+   margin-top: 60px;
+}
+
+.ayc-text h2{
+    font-size: 36px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.ayc-separador{
+    border-bottom: #172A48 solid 4px;
+    width: 50px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+/* ==================================================================================
+SECTION 05
+=====================================================================================*/
+#apoyo{
+    border: #646464 solid 7px;
+}
+.apoyo-bg{
+    background: url(../img/siete.jpg);
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    margin-bottom: -80vh;
+/*     position: absolute; */
+    z-index: -2;
+    
+}
+
+.apoyo-blayer{
+    background: rgba(0, 0, 0, 0.609);
+    height: 80vh;
+    margin-bottom: -80vh
+}
+
+.apoyo-cont h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.apoyo-cont p{
+    text-align: center;
+}
+
+.apoyo-separadorblanco{
+    border-bottom: white 4px solid;
+    width: 90px;
+    margin: auto;
+}
+
+.altura80{
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.altura80 p{
+    color: rgb(255, 255, 255);
+}
+
+.apoyo-puntos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apoyo-puntos li{
+    color: white;
+}
+
+/* ==================================================================================
+SECTION 06
+=====================================================================================*/
+#asesoria-y-consultoria-internacional{
+    background: #dfdfdf;
+}
+.ayci-cont-flex{
     height: 100vh;
     width: 80%;
     margin: auto;
     align-items: center;
     justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.ayci-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ayci-img{
+    height: 75vh;
+    width: 450px;
+    background: url(../img/city2.jpg);
+    background-size: cover;
+    align-items: center;
+}
+
+.ayci-text{
+    width: 600x;
+}
+
+.ayci-text div{
+    margin-top: 15px;
+    margin-left: 30px;
+    border: #172A48 solid 2px;
+}
+
+.ayci-text p{
+   margin: 20px;
+}
+
+.ayci-cont-flex h2{
+    font-size: 36px;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+.ayci-cont-flex-p{
+    text-align: center;
+}
+
+.ayci-separador{
+    border-bottom: #172A48 solid 4px;
+    width: 80px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 0;
+}
+
+/* ==================================================================================
+SECTION 07
+=====================================================================================*/
+
+#gestion{   
+}
+
+.gestion-bg{
+    background: url(../img/city1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.gestion-blayer{
+    background: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100vh;
+}
+
+.gestion-cont{
+    height: 100vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.gestion-derecha{
+    width: 30vw;
+}
+
+.gestion-izquierda{
+    width: 40vw;
+}
+
+.gestion-cont h2{
+    font-size: 48px;
+}
+
+
+.gestion-cont li,
+.gestion-cont p{
+    color: white;
+}
+
+/* ==================================================================================
+SECTION Contacto
+=====================================================================================*/
+
+#contacto{
+margin-top: 15%;
+margin-bottom: 15%;
+}
+
+.contacto-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+
+}
+
+.contacto-izquierda h2{
+    font-size: 42px;
+    padding-bottom: 0;
+}
+
+.separador-contacto{
+    border-bottom: #172A48 4px solid;
+    width: 6em;
+}
+
+.contacto-izquierda{
+ width: 30vw;
+}
+
+.contacto-derecha{
+    width: ;
+    height: ;
+}
+
+.contacto-derecha img{
+    width: 100%;
+    height: 100%;
+}
+
+.contacto-derecha img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* ==================================================================================
+SECTION FOOTER
+=====================================================================================*/
+
+footer{
+    background: #172A48;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+.logofooter{
+    margin: auto;
 }
