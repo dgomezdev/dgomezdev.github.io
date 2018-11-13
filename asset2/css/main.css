@@ -1,12 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
-    margin: auto;
     overflow-x: hidden;
-}
 
-.contenedorfinal {
-    max-width: 1440px;
-    margin: auto;
 }
 
 p {
@@ -30,9 +25,6 @@ li {
     color: white;
 }
 
-.row {
-    width: 100%;
-}
 
 .fixh {
     height: 100vh;
@@ -41,17 +33,8 @@ li {
 
 }
 
-.container-section {
-    width: 80%;
-    margin: auto;
-}
-
 .hdfix {
     height: 130px;
-}
-
-:focus {
-    border: none;
 }
 
 
@@ -59,12 +42,12 @@ li {
 HEADER
 =====================================================================================*/
 
-.closemenu{
+.closemenu {
     margin-top: -100vh;
     transition: .4s;
 }
 
-.openmenu{
+.openmenu {
     overflow: hidden;
     transition: .4s;
 }
@@ -77,15 +60,15 @@ HEADER
     transition: .4s;
 }
 
-.cerrar p{
+.cerrar p {
     color: white;
-    font-weight:bold;
+    font-weight: bold;
     text-align: right;
     padding: 16px;
     margin: 0;
 }
 
-.cerrar:hover{
+.cerrar:hover {
     background: black;
     cursor: pointer;
 }
@@ -103,10 +86,6 @@ HEADER
     margin-bottom: 24px;
     font-weight: bold;
 
-}
-
-.menu-m nav a img {
-/*     transform: scale(.6); */
 }
 
 .menuh {
@@ -792,7 +771,7 @@ footer p {
 
     /* For desktop: */
 
-/* ==================================================================================
+    /* ==================================================================================
 HEADER
 =====================================================================================*/
 
@@ -1479,21 +1458,20 @@ SECTION FOOTER
         margin: auto;
     }
 
-
 }
 
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
+
     /* For mobile: */
+    .nonina {
+        width: 50%;
+    }
 
+    .nonina img {
+        margin-top: 10px;
+        width: 300px;
+    }
 
-.nonina{
-    width: 50%;
-}
-
-.nonina img{
-    margin-top: 10px;
-   width: 300px;
-}
 }

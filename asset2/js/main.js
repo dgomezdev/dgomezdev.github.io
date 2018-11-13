@@ -10,6 +10,7 @@ $(window).scroll(function(){
     }
   });
 
+  $('body').css('width', screen.width)
 
 //========================================================================
 //    MENU MOBILE
