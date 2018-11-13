@@ -1,44 +1,57 @@
 body {
     font-family: 'Lato', sans-serif;
-    max-width: 1366px;
     margin: auto;
     overflow-x: hidden;
 }
 
-p{
+.contenedorfinal {
+    max-width: 1440px;
+    margin: auto;
+}
+
+p {
     font-size: 20px;
     color: #464646;
     line-height: 140%;
 }
 
 
-ul,li{
+ul,
+li {
     font-size: 20px;
     color: #464646;
 }
 
-li{
+li {
     margin-top: 24px;
 }
 
-.white{
+.white {
     color: white;
 }
 
-.row{
+.row {
     width: 100%;
 }
 
-.fixh{
+.fixh {
     height: 100vh;
     display: flex;
     align-items: center;
-    
+
 }
 
-.container-section{
+.container-section {
     width: 80%;
     margin: auto;
+}
+
+.hdfix {
+    height: 130px;
+}
+
+:focus {
+    border: none;
 }
 
 
@@ -48,13 +61,48 @@ HEADER
 
 .logocont {
     width: 100%;
-    position: absolute;
+    position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 5vh;
+    align-content: center;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     z-index: 30;
-    max-width: 1366px;
-/*     margin-bottom: -110px; */
+    transition: .4s;
+    text-align: center;
+    /* background: #172a48; */
+    /*     max-width: 1366px; */
+    /*     margin-bottom: -110px; */
+}
+
+.logocont a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 16px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+    /* transition: .4s ease-out; */
+    transition: .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.logocont nav a:hover {
+    border-bottom: 4px solid white;
+}
+
+.nohover:hover {
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+}
+
+.nohover:active {
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+}
+
+
+.nohover:focus {
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
 }
 
 .fullimg {
@@ -65,16 +113,16 @@ HEADER
 }
 
 .bluelayer {
-    background: rgba(41, 122, 251, 0.561);
- /*    position: absolute; */
+    background: rgba(23, 42, 72, 0.74);
+    /*    position: absolute; */
     height: 100vh;
     width: 100%;
     margin-top: -100vh;
     z-index: 20;
 }
 
-.headerp{
- /*    position: absolute; */
+.headerp {
+    /*    position: absolute; */
     height: 100vh;
     width: 100%;
     margin-top: -100vh;
@@ -84,26 +132,26 @@ HEADER
     flex-direction: column;
 }
 
-.textcont{
+.textcont {
+
+    margin: auto;
     margin-top: 35vh;
-    margin-left: 10vw;
-    width: 38vw;
-    height: 100vh;
+    width: 90%;
 }
 
-.textcont h2{
+.textcont h2 {
     font-size: 42px;
     font-weight: 900;
     margin: 0;
     padding: 0;
 }
 
-.textcont p{
+.textcont p {
     margin: 0;
     padding: 0;
 }
 
-.separador-blanco{
+.separador-blanco {
     border-bottom: solid white 3px;
     width: 80px;
     margin-top: 12px;
@@ -114,8 +162,11 @@ HEADER
 /* ==================================================================================
 SECTION 01
 =====================================================================================*/
+.fixaltura {
+    padding: 10% 0 10% 0;
+}
 
-.separador-azul{
+.separador-azul {
     width: 80px;
     border: #172A48 solid 1.7px;
     margin: auto;
@@ -123,7 +174,7 @@ SECTION 01
     margin-bottom: 55px;
 }
 
-.container-section h2{
+.container-section h2 {
     text-align: center;
     font-size: 36px;
     margin: 0;
@@ -131,23 +182,28 @@ SECTION 01
     padding: 0;
 }
 
-.container-section p{
+.container-section p {
     font-weight: 300;
-    width: 460px;
     font-size: 18px;
 }
 
-.logogrande{
-    width: 500px;
-    height: 500px;
+.container-section .derecha {
+    margin: auto;
 }
 
-.contenido-section{
+.logogrande {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+.contenido-section {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.aligncenter{
+.aligncenter {
     text-align: justify;
 }
 
@@ -155,135 +211,155 @@ SECTION 01
 SECTION 02
 =====================================================================================*/
 
-#soluciones-pmc-asset-management{
-    background: rgb(238, 238, 238);
-    padding-top: 15%;
-    padding-bottom: 15%;
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.altura{
+@keyframes relleno {
+    0% {
+        fill: #172a48;
+    }
+
+    50% {
+        fill: #5a81c0;
+    }
+
+    100% {
+        fill: #172a48;
+    }
+}
+
+
+/* svg */
+
+#superblu {
+    animation: relleno 4s ease infinite;
+}
+
+#esfera {
+    animation: girar 4s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.cls-1,
+.cls-2 {
+    fill: none;
+}
+
+.cls-1 {
+    stroke: #172a48;
+    stroke-miterlimit: 10;
+}
+
+.cls-3 {
+    fill: #172a48;
+}
+
+/* fin svg */
+
+#soluciones-pmc-asset-management {
+    background: rgb(238, 238, 238);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.soluciones-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.altura {
     justify-content: center;
     align-items: center;
     width: 80%;
     margin: auto;
-    
+
 }
 
-.soluciones-cont h2{
-    text-align: center;
+.separador-soluciones {
+    /*     width: 80px; */
+    border-left: #172A48 solid 10px;
+    padding-left: 10px;
+}
+
+.soluciones-cont h2 {
     color: #172A48;
     font-size: 36px;
+    margin-bottom: .4em;
 }
 
-.esquema{
-    display: flex;
-    justify-content: space-between;
+.lista-ciclo {
+    margin-left: 1em;
+    list-style-type: disc;
+    font-size: 1.25em;
 }
 
-.column h4{
-    background: #172A48;
-    color: white;
-    padding: 20px 35px 20px 35px;
-    text-align: center;
+.paso1 {
+    list-style-image: url(/img/paso1.png);
+}
+
+.paso2 {
+    list-style-image: url(/img/paso2.png);
+}
+
+.paso3 {
+    list-style-image: url(/img/paso3.png);
+}
+
+.paso4 {
+    list-style-image: url(/img/paso4.png);
+}
+
+.paso5 {
+    list-style-image: url(/img/paso5.png);
+}
+
+.img-contsc {
+    width: 360px;
     margin: auto;
 }
 
-.column p{
-    text-align: center;
-    width: 190px;
-    margin: auto;
-    padding-top: 16px;
-    padding-bottom: 16px
-}
-
-.columnfix h4{
-    padding: 12px 35px 12px 35px;
-    text-align: center;
-}
-
-.arrow-down{
-    border-right: 4px #172A48 solid;
-    border-bottom: 4px #172A48 solid;
-    height: 24px;
-    width: 24px;
-    transform: rotate(45deg);
-    margin: auto;
-}
-
-
-.arrow-up{
-    border-right: 4px #172A48 solid;
-    border-bottom: 4px #172A48 solid;
-    height: 24px;
-    width: 24px;
-    transform: rotate(-135deg);
-    margin: auto;
-}
-
-.bottom-column{
-    font-weight: 700;
-    text-align: center;
-    background: #172A48;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 600px;
-    margin: auto;
-    margin-top: 5%;
-}
-
-.bottom-column p{
-    color: white;
-}
-
-.bottom-column span{
-    line-height: 2px;
-    font-weight: 900;
-    margin: 0;
-    padding: 0;
-}
-
-.img-contsc{
-    width: 50%;
-    margin: auto;
-}
-.soluciones-cont img{
-    height: 240px;
+.soluciones-cont img {
+    height: 220px;
 }
 
 /* ==================================================================================
 SECTION 03
 =====================================================================================*/
 
-#conocer-mas{
-    border: #646464 solid 7px;
+#conocer-mas {
+    display: none;
 }
-.conocer-mas-bg{
+
+.conocer-mas-bg {
     background: url(../img/mesa.jpg);
     background-size: cover;
-    filter: blur(2px);
+    /*     filter: blur(2px); */
     height: 60vh;
     width: 100%;
     margin-bottom: -60vh;
     z-index: -2;
-    
+
 }
 
-.conocer-mas-blayer{
+.conocer-mas-blayer {
     background: rgba(0, 0, 0, 0.39);
     height: 60vh;
     margin-bottom: -60vh
 }
 
-.conocer-mas-cont h2{
+.conocer-mas-cont h2 {
     font-size: 32px;
     text-align: center;
 }
 
-.conocer-mas-cont p{
+.conocer-mas-cont p {
     text-align: center;
 }
 
-.altura50{
+.altura50 {
     height: 60vh;
     width: 80%;
     margin: auto;
@@ -293,45 +369,47 @@ SECTION 03
     color: white;
 }
 
-.altura50 p{
+.altura50 p {
     color: white;
 }
 
-.inputs{
+.inputs {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-label{
+label {
     font-weight: bold;
 }
 
-input{
+input {
     width: 380px;
     height: 36px;
 }
 
-.inputs-flex div{
+.inputs-flex div {
     margin-left: 48px;
 }
-.inputs-flex{
+
+.inputs-flex {
     display: flex;
     justify-content: space-between;
 }
 
-button{
+button {
     background: #172A48;
     padding: 15px 30px;
     color: white;
     transition: .4s;
 }
 
-.btn{
+.btn {
     margin-top: 28px;
 }
-button:hover{
+
+button:hover {
     background: white;
     color: #172A48;
     transition: .4s;
@@ -340,25 +418,28 @@ button:hover{
 /* ==================================================================================
 SECTION 04
 =====================================================================================*/
-#asesoria-y-consultoria{
+#asesoria-y-consultoria {
     background: #dfdfdf;
 }
-.ayc-cont-flex{
-    height: 100vh;
+
+.ayc-cont-flex {
+    /*     height: 100vh; */
     width: 80%;
     margin: auto;
     align-items: center;
     justify-content: center;
+    padding: 10% 0 10% 0;
 
 }
 
-.ayc-cont{
+.ayc-cont {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
-.ayc-img{
-    height: 90vh;
+.ayc-img {
+    /*   height: 90vh; */
     width: 450px;
     background: url(../img/pantallas.jpg);
     background-size: cover;
@@ -366,21 +447,23 @@ SECTION 04
     align-items: center;
 }
 
-.ayc-text{
-    width: 420px;
+.ayc-text {
+    /* width: 420px; */
+    padding: 24px;
+    max-width: 600px;
 }
 
-.ayc-text p{
-   margin-top: 60px;
+.ayc-text p {
+    margin-top: 60px;
 }
 
-.ayc-text h2{
+.ayc-text h2 {
     font-size: 36px;
     margin-bottom: 5px;
     padding: 0;
 }
 
-.ayc-separador{
+.ayc-separador {
     border-bottom: #172A48 solid 4px;
     width: 50px;
     margin-top: 5px;
@@ -390,119 +473,127 @@ SECTION 04
 /* ==================================================================================
 SECTION 05
 =====================================================================================*/
-#apoyo{
+#apoyo {
     border: #646464 solid 7px;
 }
-.apoyo-bg{
+
+.apoyo-bg {
     background: url(../img/siete.jpg);
     background-size: cover;
     height: 80vh;
     width: 100%;
     margin-bottom: -80vh;
-/*     position: absolute; */
+    /*     position: absolute; */
     z-index: -2;
-    
+
 }
 
-.apoyo-blayer{
-    background: rgba(0, 0, 0, 0.609);
+.apoyo-blayer {
+    background: rgba(0, 0, 0, 0.719);
     height: 80vh;
     margin-bottom: -80vh
 }
 
-.apoyo-cont h2{
+.apoyo-cont h2 {
     font-size: 32px;
     text-align: center;
 }
 
-.apoyo-cont p{
+.apoyo-cont p {
     text-align: center;
 }
 
-.apoyo-separadorblanco{
+.apoyo-separadorblanco {
     border-bottom: white 4px solid;
     width: 90px;
     margin: auto;
 }
 
-.altura80{
-    height: 80vh;
+.altura80 {
+    /*     height: 80vh; */
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*    align-items: center; */
     color: white;
+    padding: 5% 0;
 }
-.altura80 p{
+
+.altura80 p {
     color: rgb(255, 255, 255);
 }
 
 .apoyo-puntos {
+    margin-top: -40px;
     display: flex;
     justify-content: space-between;
 }
 
-.apoyo-puntos li{
+.apoyo-puntos li {
     color: white;
+    list-style-type: none;
+    padding-left: 5px;
+    border-left: #172A48 4px solid;
 }
 
 /* ==================================================================================
 SECTION 06
 =====================================================================================*/
-#asesoria-y-consultoria-internacional{
+#asesoria-y-consultoria-internacional {
     background: #dfdfdf;
 }
-.ayci-cont-flex{
-    height: 100vh;
+
+.ayci-cont-flex {
+    /*     height: 100vh; */
     width: 80%;
     margin: auto;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 
 }
 
-.ayci-cont{
+.ayci-cont {
     display: flex;
     justify-content: space-between;
 }
 
-.ayci-img{
-    height: 75vh;
-    width: 450px;
-    background: url(../img/city2.jpg);
-    background-size: cover;
-    align-items: center;
+.ayci-img {
+    display: none;
 }
 
-.ayci-text{
+.ayci-text {
     width: 600x;
 }
 
-.ayci-text div{
-    margin-top: 15px;
+.ayci-text div {
+    /*  margin-top: 15px; */
     margin-left: 30px;
-    border: #172A48 solid 2px;
+    border: rgb(13, 28, 53) solid 4px;
+    background: #172a48;
+
 }
 
-.ayci-text p{
-   margin: 20px;
+.ayci-text p {
+    margin: 20px;
+    color: white;
 }
 
-.ayci-cont-flex h2{
+.ayci-cont-flex h2 {
     font-size: 36px;
+    margin-top: 0;
     margin-bottom: 5px;
     padding: 0;
     text-align: center;
 }
 
-.ayci-cont-flex-p{
+.ayci-cont-flex-p {
     text-align: center;
 }
 
-.ayci-separador{
+.ayci-separador {
     border-bottom: #172A48 solid 4px;
     width: 80px;
     margin: auto;
@@ -510,49 +601,56 @@ SECTION 06
     padding: 0;
 }
 
+
+.fix-margin {
+    margin: 1em 0;
+}
+
 /* ==================================================================================
 SECTION 07
 =====================================================================================*/
 
-#gestion{   
-}
-
-.gestion-bg{
+.gestion-bg {
     background: url(../img/city1.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
 }
 
-.gestion-blayer{
-    background: rgba(0, 0, 0, 0.596);
+.gestion-blayer {
+    background: rgba(0, 0, 0, 0.856);
     width: 100%;
     height: 100vh;
 }
 
-.gestion-cont{
-    height: 100vh;
+.gestion-cont {
     display: flex;
+    flex-direction: column;
     color: white;
     align-items: center;
     justify-content: center;
 }
 
-.gestion-derecha{
-    width: 30vw;
+.gestion-derecha {
+    width: 90%;
 }
 
-.gestion-izquierda{
-    width: 40vw;
+/* .fixbr{
+    display: none;
+} */
+
+.gestion-izquierda {
+    width: 90%;
+    text-align: center;
 }
 
-.gestion-cont h2{
-    font-size: 48px;
+.gestion-cont h2 {
+    font-size: 50px;
 }
 
 
 .gestion-cont li,
-.gestion-cont p{
+.gestion-cont p {
     color: white;
 }
 
@@ -560,46 +658,44 @@ SECTION 07
 SECTION Contacto
 =====================================================================================*/
 
-#contacto{
-margin-top: 15%;
-margin-bottom: 15%;
+#contacto {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.contacto-flex{
+.contacto-flex {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     width: 80%;
     margin: auto;
 
 }
 
-.contacto-izquierda h2{
+.contacto-izquierda h2 {
     font-size: 42px;
     padding-bottom: 0;
+    padding-top: .4em;
+    margin: 0;
 }
 
-.separador-contacto{
-    border-bottom: #172A48 4px solid;
-    width: 6em;
+.contacto-izquierda {
+    text-align: center;
+    width: 90%;
+    margin: auto;
 }
 
-.contacto-izquierda{
- width: 30vw;
+.contacto-derecha {
+    order: 0;
 }
 
-.contacto-derecha{
-    width: ;
-    height: ;
+.mapamobile {
+    display: inherit;
+    margin: auto;
 }
 
-.contacto-derecha img{
-    width: 100%;
-    height: 100%;
-}
-
-.contacto-derecha img{
-    height: 100%;
-    width: 100%;
+.mapadesktop {
+    display: none;
 }
 
 
@@ -608,20 +704,721 @@ margin-bottom: 15%;
 SECTION FOOTER
 =====================================================================================*/
 
-footer{
+footer {
     background: #172A48;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-footer p{
+footer p {
     text-align: center;
     color: white;
 }
 
-.logofooter{
+.logofooter {
     margin: auto;
+}
+
+
+@media only screen and (min-width: 1023px) {
+    /* For desktop: */
+
+
+    /* ==================================================================================
+HEADER
+=====================================================================================*/
+
+    .logocont {
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 30;
+        transition: .4s;
+        text-align: center;
+        /* background: #172a48; */
+        /*     max-width: 1366px; */
+        /*     margin-bottom: -110px; */
+    }
+
+    .logocont a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 16px;
+        padding-bottom: 5px;
+        border-bottom: 4px solid rgba(255, 255, 255, 0);
+        /* transition: .4s ease-out; */
+        transition: .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+    .logocont nav a:hover {
+        border-bottom: 4px solid white;
+    }
+
+    .nohover:hover {
+        border-bottom: 4px solid rgba(255, 255, 255, 0);
+    }
+
+    .nohover:active {
+        border-bottom: 4px solid rgba(255, 255, 255, 0);
+    }
+
+
+    .nohover:focus {
+        border-bottom: 4px solid rgba(255, 255, 255, 0);
+    }
+
+    .fullimg {
+        background: url(../img/uno.jpg);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .bluelayer {
+        background: rgba(23, 42, 72, 0.74);
+        /*    position: absolute; */
+        height: 100vh;
+        width: 100%;
+        margin-top: -100vh;
+        z-index: 20;
+    }
+
+    .headerp {
+        /*    position: absolute; */
+        height: 100vh;
+        width: 100%;
+        margin-top: -100vh;
+        color: white;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textcont {
+        margin-top: 35vh;
+        margin-left: 10vw;
+        width: 38vw;
+        height: 100vh;
+    }
+
+    .textcont h2 {
+        font-size: 42px;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+    }
+
+    .textcont p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .separador-blanco {
+        border-bottom: solid white 3px;
+        width: 80px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+
+    /* ==================================================================================
+SECTION 01
+=====================================================================================*/
+    .fixaltura {
+        padding: 10% 0 10% 0;
+    }
+
+    .separador-azul {
+        width: 80px;
+        border: #172A48 solid 1.7px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 55px;
+    }
+
+    .container-section h2 {
+        text-align: center;
+        font-size: 36px;
+        margin: 0;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .container-section p {
+        font-weight: 300;
+        /* width: 460px; */
+        font-size: 18px;
+    }
+
+    .logogrande {
+        width: 350px;
+        height: 350px;
+    }
+
+    .contenido-section {
+        display: flex;
+        flex-direction: inherit;
+        justify-content: space-between;
+    }
+
+    .aligncenter {
+        text-align: justify;
+    }
+
+    /* ==================================================================================
+SECTION 02
+=====================================================================================*/
+
+    @keyframes girar {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes relleno {
+        0% {
+            fill: #172a48;
+        }
+
+        50% {
+            fill: #5a81c0;
+        }
+
+        100% {
+            fill: #172a48;
+        }
+    }
+
+
+    /* svg */
+
+    #superblu {
+        animation: relleno 4s ease infinite;
+    }
+
+    #esfera {
+        animation: girar 4s linear infinite;
+        transform-origin: 50% 50%;
+    }
+
+    .cls-1,
+    .cls-2 {
+        fill: none;
+    }
+
+    .cls-1 {
+        stroke: #172a48;
+        stroke-miterlimit: 10;
+    }
+
+    .cls-3 {
+        fill: #172a48;
+    }
+
+    /* fin svg */
+
+    #soluciones-pmc-asset-management {
+        background: rgb(238, 238, 238);
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .soluciones-cont {
+        display: flex;
+        flex-direction: inherit;
+    }
+
+    .altura {
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .separador-soluciones {
+        /*     width: 80px; */
+        border-left: #172A48 solid 10px;
+        padding-left: 10px;
+    }
+
+    .soluciones-cont h2 {
+        color: #172A48;
+        font-size: 36px;
+        margin-bottom: .4em;
+    }
+
+    .lista-ciclo {
+        margin-left: 1em;
+        list-style-type: disc;
+        font-size: 1.25em;
+    }
+
+    .paso1 {
+        list-style-image: url(/img/paso1.png);
+    }
+
+    .paso2 {
+        list-style-image: url(/img/paso2.png);
+    }
+
+    .paso3 {
+        list-style-image: url(/img/paso3.png);
+    }
+
+    .paso4 {
+        list-style-image: url(/img/paso4.png);
+    }
+
+    .paso5 {
+        list-style-image: url(/img/paso5.png);
+    }
+
+    .img-contsc {
+        width: 360px;
+        margin: auto;
+    }
+
+    .soluciones-cont img {
+        height: 220px;
+    }
+
+    /* ==================================================================================
+SECTION 03
+=====================================================================================*/
+
+    #conocer-mas {
+        border: #646464 solid 7px;
+        display: inherit;
+    }
+
+    .conocer-mas-bg {
+        background: url(../img/mesa.jpg);
+        background-size: cover;
+        /*     filter: blur(2px); */
+        height: 60vh;
+        width: 100%;
+        margin-bottom: -60vh;
+        z-index: -2;
+
+    }
+
+    .conocer-mas-blayer {
+        background: rgba(0, 0, 0, 0.39);
+        height: 60vh;
+        margin-bottom: -60vh
+    }
+
+    .conocer-mas-cont h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .conocer-mas-cont p {
+        text-align: center;
+    }
+
+    .altura50 {
+        height: 60vh;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .altura50 p {
+        color: white;
+    }
+
+    .inputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        width: 380px;
+        height: 36px;
+    }
+
+    .inputs-flex div {
+        margin-left: 48px;
+    }
+
+    .inputs-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        background: #172A48;
+        padding: 15px 30px;
+        color: white;
+        transition: .4s;
+    }
+
+    .btn {
+        margin-top: 28px;
+    }
+
+    button:hover {
+        background: white;
+        color: #172A48;
+        transition: .4s;
+    }
+
+    /* ==================================================================================
+SECTION 04
+=====================================================================================*/
+    #asesoria-y-consultoria {
+        background: #dfdfdf;
+    }
+
+    .ayc-cont-flex {
+        /*     height: 100vh; */
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 10% 0 10% 0;
+
+    }
+
+    .ayc-cont {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: inherit;
+    }
+
+    .ayc-img {
+        /*   height: 90vh; */
+        width: 450px;
+        background: url(../img/pantallas.jpg);
+        background-size: cover;
+        margin-top: 33.30px;
+        align-items: center;
+    }
+
+    .ayc-text {
+        /* width: 420px; */
+        padding: 24px;
+        max-width: 600px;
+    }
+
+    .ayc-text p {
+        margin-top: 60px;
+    }
+
+    .ayc-text h2 {
+        font-size: 36px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    .ayc-separador {
+        border-bottom: #172A48 solid 4px;
+        width: 50px;
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    /* ==================================================================================
+SECTION 05
+=====================================================================================*/
+    #apoyo {
+        border: #646464 solid 7px;
+    }
+
+    .apoyo-bg {
+        background: url(../img/siete.jpg);
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        margin-bottom: -80vh;
+        /*     position: absolute; */
+        z-index: -2;
+
+    }
+
+    .apoyo-blayer {
+        background: rgba(0, 0, 0, 0.609);
+        height: 80vh;
+        margin-bottom: -80vh
+    }
+
+    .apoyo-cont h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .apoyo-cont p {
+        text-align: center;
+    }
+
+    .apoyo-separadorblanco {
+        border-bottom: white 4px solid;
+        width: 90px;
+        margin: auto;
+    }
+
+    .altura80 {
+        /*     height: 80vh; */
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        /*    align-items: center; */
+        color: white;
+        padding: 5% 0;
+    }
+
+    .altura80 p {
+        color: rgb(255, 255, 255);
+    }
+
+    .apoyo-puntos {
+        margin-top: -40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .apoyo-puntos li {
+        color: white;
+        list-style-type: none;
+        padding-left: 5px;
+        border-left: #172A48 4px solid;
+    }
+
+    /* ==================================================================================
+SECTION 06
+=====================================================================================*/
+    #asesoria-y-consultoria-internacional {
+        background: #dfdfdf;
+    }
+
+    .ayci-cont-flex {
+        /*     height: 100vh; */
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+    }
+
+    .ayci-cont {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: inherit;
+    }
+
+    .ayci-img {
+        /*   height: 75vh; */
+        width: 450px;
+        background: url(../img/city2.jpg);
+        background-size: cover;
+        align-items: center;
+        display: inherit;
+    }
+
+    .ayci-text {
+        width: 600x;
+    }
+
+    .ayci-text div {
+        /*  margin-top: 15px; */
+        margin-left: 30px;
+        border: rgb(13, 28, 53) solid 4px;
+        background: #172a48;
+
+    }
+
+    .ayci-text p {
+        margin: 20px;
+        color: white;
+    }
+
+    .ayci-cont-flex h2 {
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .ayci-cont-flex-p {
+        text-align: center;
+    }
+
+    .ayci-separador {
+        border-bottom: #172A48 solid 4px;
+        width: 80px;
+        margin: auto;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+
+    .fix-margin {
+        margin: 1em 0;
+    }
+
+    /* ==================================================================================
+SECTION 07
+=====================================================================================*/
+
+    .gestion-bg {
+        background: url(../img/city1.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .gestion-blayer {
+        background: rgba(0, 0, 0, 0.596);
+        width: 100%;
+        height: 100vh;
+    }
+
+    .gestion-cont {
+        height: 100vh;
+        display: flex;
+        flex-direction: inherit;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gestion-derecha {
+        width: 30vw;
+    }
+
+    .gestion-izquierda {
+        width: 40vw;
+    }
+
+    .gestion-cont h2 {
+        font-size: 50px;
+    }
+
+
+    .gestion-cont li,
+    .gestion-cont p {
+        color: white;
+    }
+
+    /* ==================================================================================
+SECTION Contacto
+=====================================================================================*/
+
+    #contacto {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .contacto-flex {
+        display: flex;
+        flex-direction: inherit;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .contacto-izquierda h2 {
+        font-size: 42px;
+        padding-bottom: 0;
+        padding-top: .4em;
+        margin: 0;
+    }
+
+    .separador-contacto {
+        border-bottom: #172A48 4px solid;
+        width: 6em;
+    }
+
+    .contacto-izquierda {
+        order: 1;
+        width: 30vw;
+        text-align: left;
+    }
+
+    .contacto-derecha {
+        order: 0;
+    
+    }
+
+    .contacto-derecha img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contacto-derecha img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .mapamobile {
+        display: none;
+        margin: auto;
+    }
+    
+    .mapadesktop {
+        display: inherit;
+    }
+
+
+
+    /* ==================================================================================
+SECTION FOOTER
+=====================================================================================*/
+
+    footer {
+        background: #172A48;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        text-align: center;
+        color: white;
+    }
+
+    .logofooter {
+        margin: auto;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+
+
+
+
 }
