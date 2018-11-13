@@ -10,6 +10,21 @@ $(window).scroll(function(){
     }
   });
 
+
+//========================================================================
+//    MENU MOBILE
+//========================================================================
+
+function openmenu(){
+    $('.menu-m').css('marginTop', '0');
+    $('body').css('overflow', 'hidden');
+}
+
+function closemenu(){
+    $('.menu-m').css('marginTop', '-100vh');
+    $('body').css('overflow', 'inherit');
+}
+
   
 //========================================================================
 //    SMOOTH SCROLL

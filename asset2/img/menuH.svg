@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+    <title>menuH</title>
+  <defs>
+    <style>
+      .fondomenuh {
+        fill: white;
+      }
+    </style>
+  </defs>
+    <g id="Capa_2" data-name="Capa 2">
+        <g id="hamburguesa">
+<!--             <rect id="padding" class="fondomenuh" width="2000" height="2000" />
+ -->        <rect class="fondomenuh" id="hamburguesaCentroDos" x="304" y="839" width="1392" height="160" />
+            <rect class="fondomenuh"  id="hamburguesaCentro" x="304" y="841" width="1392" height="160"   />
+            <rect class="fondomenuh"  id="hamburguesaArriba" x="304" y="303.5" width="1392" height="160" />
+            <rect class="fondomenuh"  id="hamburguesaAbajo" x="304" y="1375" width="1392" height="160"/>
+        </g>
+    </g>
+</svg>

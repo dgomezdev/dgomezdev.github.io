@@ -59,22 +59,87 @@ li {
 HEADER
 =====================================================================================*/
 
-.logocont {
+.closemenu{
+    margin-top: -100vh;
+    transition: .4s;
+}
+
+.openmenu{
+    overflow: hidden;
+    transition: .4s;
+}
+
+.menu-m {
+    height: 100vh;
     width: 100%;
-    position: fixed;
+    background: #172A48;
+    margin-top: -100vh;
+    transition: .4s;
+}
+
+.cerrar p{
+    color: white;
+    font-weight:bold;
+    text-align: right;
+    padding: 16px;
+    margin: 0;
+}
+
+.cerrar:hover{
+    background: black;
+    cursor: pointer;
+}
+
+.menu-m nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    z-index: 30;
+    align-items: center;
+}
+
+.menu-m nav a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 24px;
+    font-weight: bold;
+
+}
+
+.menu-m nav a img {
+/*     transform: scale(.6); */
+}
+
+.menuh {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    margin-bottom: 10px;
     transition: .4s;
-    text-align: center;
-    /* background: #172a48; */
-    /*     max-width: 1366px; */
-    /*     margin-bottom: -110px; */
+
+}
+
+.menuh:hover {
+    background: black;
+    transition: .4s;
+    cursor: pointer;
+
+}
+
+.nonina {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.logocont-mobile {
+    background: #172a48;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.logocont {
+    display: none;
 }
 
 .logocont a {
@@ -724,12 +789,18 @@ footer p {
 
 
 @media only screen and (min-width: 1023px) {
+
     /* For desktop: */
 
-
-    /* ==================================================================================
+/* ==================================================================================
 HEADER
 =====================================================================================*/
+
+    .logocont-mobile,
+    .menu-m {
+        display: none;
+    }
+
 
     .logocont {
         width: 100%;
@@ -744,9 +815,7 @@ HEADER
         z-index: 30;
         transition: .4s;
         text-align: center;
-        /* background: #172a48; */
-        /*     max-width: 1366px; */
-        /*     margin-bottom: -110px; */
+
     }
 
     .logocont a {
@@ -1033,7 +1102,7 @@ SECTION 03
         width: 80%;
         margin: auto;
         display: flex;
-        
+
         justify-content: center;
         align-items: center;
         color: white;
@@ -1364,7 +1433,7 @@ SECTION Contacto
 
     .contacto-derecha {
         order: 0;
-    
+
     }
 
     .contacto-derecha img {
@@ -1381,7 +1450,7 @@ SECTION Contacto
         display: none;
         margin: auto;
     }
-    
+
     .mapadesktop {
         display: inherit;
     }
@@ -1415,10 +1484,16 @@ SECTION FOOTER
 
 
 
-@media only screen and (min-width: 768px) {
-    /* For tablets: */
+@media only screen and (max-width: 425px) {
+    /* For mobile: */
 
 
+.nonina{
+    width: 50%;
+}
 
-
+.nonina img{
+    margin-top: 10px;
+   width: 300px;
+}
 }
