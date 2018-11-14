@@ -108,12 +108,19 @@ var h = window.innerHeight;
 // obtener alto y ancho del texto
 var hLaFirma = $('#la-firma .izquierda').height();
 var wLaFirma = $('#la-firma .izquierda').width();
+var hns = $('#esp .izquierda').height();
+var wns = $('#esp .izquierda').width();
 
 if (w >= 1024) {
     // hacer la imagen del mismo tamaño que el texto en pantallas mayores a 1024px
     $('.autohw').css({
         'height': hLaFirma,
         'width': wLaFirma,
+        'backgroundSize': 'cover'
+    });
+    $('.autons').css({
+        'height': hns,
+        'width': wns,
         'backgroundSize': 'cover'
     });
 } else if (w <= 1023) {
@@ -123,14 +130,14 @@ if (w >= 1024) {
         'width': w,
         'backgroundSize': 'cover'
     });
+    $('.autons').css({
+        'height': hns,
+        'width': w,
+        'backgroundSize': 'cover'
+    });
 }
 
- var hcon = $('#conozcanos').height();
- var nhcon = hcon *-1;
- $('.conozcanos-blayer').css({
-    'height': hcon,
-    'marginBottom': nhcon
- });
+
 
 
 //========================================================================

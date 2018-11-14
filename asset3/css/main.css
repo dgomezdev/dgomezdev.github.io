@@ -84,11 +84,16 @@ header {
 header div nav {
     color: white;
     text-decoration: white;
+    width: 50%;
 }
 
 header div nav a {
     color: white;
     text-decoration: white;
+}
+
+header div nav span{
+    padding: 0 1.5%;
 }
 
 .titulo-slider {
@@ -162,12 +167,10 @@ SECTION 02 // CONOZCANOS
     text-align: center;
 }
 .conozcanos-blayer{
-    background: rgba(0, 0, 0, 0.76);
-
     width: 100%;
 }
 #conozcanos {
-    background: url(../img/comp/slide4.jpg);
+    background: url(../img/comp/bg.jpg);
     background-size: cover;
 }
 
@@ -176,6 +179,51 @@ SECTION 02 // CONOZCANOS
 
 }
 
+/* ====================================================================
+SECTION 03 // NUESTRA ESPECIALIDAD
+==================================================================== */
+
+#nuestra-especialidad .derecha{
+    display: none;
+}
+
+#esp .derecha{
+    background: url(../img/comp/slide5.jpg);
+    background-size: cover;
+}
+
+.orange-row{
+    background: #CF9355;
+    padding: 2.5% 0;
+}
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+#contacto img{
+    padding: 2.5%;
+}
+
+.orange-row p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer{
+    background: #172A48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    height: 50px;
+    padding: 1.5% 0;
+}
 @media only screen and (min-width: 1023px) {
     .contenedor-header {
         display: flex;
@@ -198,10 +246,21 @@ SECTION 02 // CONOZCANOS
         background: rgb(214, 214, 214);
         width: 50%;
     }
+    
+    #esp .izquierda {
+
+        background: rgb(214, 214, 214);
+        width: 50%;
+    }
 
     #la-firma .derecha {}
 
     .la-firma {
+        width: 80%;
+        margin: auto;
+        padding: 5% 0;
+    }
+    .ns {
         width: 80%;
         margin: auto;
         padding: 5% 0;
@@ -226,6 +285,16 @@ SECTION 02 // CONOZCANOS
         background: #646464;
         color: white;
         padding: 15px;
+    }
+    #nuestra-especialidad .derecha{
+        display: inherit;
+    }
+
+    #esp{
+        display: flex;
+        justify-content: space-between;
+        border-top: #172A48 solid 24px;
+        border-bottom: #172A48 solid 24px;
     }
 
 }
