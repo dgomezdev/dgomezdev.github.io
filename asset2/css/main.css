@@ -4,10 +4,12 @@ body {
 
 }
 
+
 p {
     font-size: 20px;
     color: #464646;
     line-height: 140%;
+    text-align: justify;
 }
 
 
@@ -36,7 +38,6 @@ li {
 .hdfix {
     height: 130px;
 }
-
 
 /* ==================================================================================
 HEADER
@@ -184,7 +185,8 @@ HEADER
 }
 
 .textcont h2 {
-    font-size: 42px;
+    /*     font-size: 42px; */
+    font-size: 36px;
     font-weight: 900;
     margin: 0;
     padding: 0;
@@ -361,7 +363,7 @@ SECTION 02
 }
 
 .img-contsc {
-    width: 360px;
+    width: 340px;
     margin: auto;
 }
 
@@ -657,14 +659,14 @@ SECTION 07
 .gestion-bg {
     background: url(../img/city1.jpg);
     width: 100%;
-    height: 100vh;
+    /*   height: 100vh; */
     background-size: cover;
 }
 
 .gestion-blayer {
     background: rgba(0, 0, 0, 0.856);
     width: 100%;
-    height: 100vh;
+    /*     height: 100vh; */
 }
 
 .gestion-cont {
@@ -774,6 +776,10 @@ footer p {
     /* ==================================================================================
 HEADER
 =====================================================================================*/
+    .contenedorfinal {
+        width: 80%;
+        margin: auto;
+    }
 
     .logocont-mobile,
     .menu-m {
@@ -789,8 +795,8 @@ HEADER
         justify-content: center;
         align-content: center;
         margin: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         z-index: 30;
         transition: .4s;
         text-align: center;
@@ -1046,7 +1052,6 @@ SECTION 03
 =====================================================================================*/
 
     #conocer-mas {
-        border: #646464 solid 7px;
         display: inherit;
     }
 
@@ -1354,6 +1359,7 @@ SECTION 07
         color: white;
         align-items: center;
         justify-content: center;
+        text-align: justify;
     }
 
     .gestion-derecha {
@@ -1366,12 +1372,14 @@ SECTION 07
 
     .gestion-cont h2 {
         font-size: 50px;
+        text-align: justify;
     }
 
 
     .gestion-cont li,
     .gestion-cont p {
         color: white;
+
     }
 
     /* ==================================================================================
@@ -1462,7 +1470,7 @@ SECTION FOOTER
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
 
     /* For mobile: */
     .nonina {
@@ -1470,8 +1478,192 @@ SECTION FOOTER
     }
 
     .nonina img {
-        margin-top: 10px;
-        width: 300px;
+        margin-top: 17px;
+        width: 230px;
     }
 
+    .textcont h2 {
+        font-size: 33px;
+    }
+
+    .img-contsc {
+        width: 280px;
+    }
+
+    .soluciones-cont h2 {
+        font-size: 33px;
+        text-align: left;
+    }
+
+    .apoyo-blayer {
+        background: rgba(0, 0, 0, 0.719);
+        height: 120vh;
+        margin-bottom: -120vh;
+    }
+
+    .apoyo-bg {
+        background: url(../img/siete.jpg);
+        background-size: cover;
+        height: 120vh;
+        width: 100%;
+        margin-bottom: -120vh;
+        /* position: absolute; */
+        z-index: -2;
+    }
+
+    .apoyo-cont h2 {
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .apoyo-puntos {
+        margin-top: -40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #apoyo {
+        border: #64646400 solid 7px;
+    }
+
+    .apoyo-cont p {
+        text-align: justify;
+    }
+
+    .container-section p {
+        font-weight: 300;
+        font-size: 18px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .ayc-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .ayc-cont-flex {
+        /* height: 100vh; */
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 10% 0 10% 0;
+    }
+
+    .altura80 {
+        /* height: 80vh; */
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        color: white;
+        padding: 5% 0;
+    }
+
+    .ayci-cont-flex h2 {
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .apoyo-separadorblanco {
+        border-bottom: white 4px solid;
+        width: 90px;
+        margin: 0;
+    }
+
+    .ayci-text div {
+        /* margin-top: 15px; */
+        margin-left: 0px;
+        border: rgb(13, 28, 53) solid 4px;
+        background: #172a48;
+    }
+
+    .ayci-cont-flex-p {
+        text-align: justify;
+    }
+
+    .contacto-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .contacto-izquierda p a {
+        font-size: 16px;
+    }
+
+    .contacto-izquierda h2 {
+        font-size: 33px;
+        text-align: left;
+        padding-bottom: 0;
+        padding-top: .0;
+        margin: 0;
+    }
+    #contacto .hdfix{
+        height: 20px;
+    }
+
+    .gestion-cont h2 {
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .ayci-cont-flex h2 {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        text-align: left;
+    }
+    .ayci-cont-flex {
+        /* height: 100vh; */
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .altura {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+    .lista-ciclo {
+        margin-left: 0;
+        list-style-type: disc;
+        font-size: 1em;
+    }
+    .apoyo-cont ul{
+        margin: 0px;
+        margin-top: 0px;
+        padding: 0;
+       
+    }
+
+    .paddd{
+        padding-bottom: 25px;
+    }
+
+    footer {
+        background: #172A48;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logofooter {
+        margin: 15px;
+        width: 300px;
+    }
 }

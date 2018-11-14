@@ -10,7 +10,11 @@ $(window).scroll(function(){
     }
   });
 
-  $('body').css('width', screen.width)
+  var ancho = screen.width;
+
+
+$('body').css('width',ancho);
+$('.logocont-mobile').css('width',ancho);
 
 //========================================================================
 //    MENU MOBILE
