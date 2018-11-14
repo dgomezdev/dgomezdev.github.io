@@ -1,0 +1,238 @@
+* {
+    transition: .6s;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    text-align: justify;
+    color: #646464;
+    line-height: 140%;
+}
+
+h2 {
+    color: #646464;
+}
+
+h3 {
+    color: white;
+}
+
+header {
+    background: #172A48;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide1 {
+    background: url(../img/comp/slide1.jpg);
+    background-size: cover;
+
+
+}
+
+.slide2 {
+    background: url(../img/comp/slide2.jpg);
+    background-size: cover;
+}
+
+.slide3 {
+    background: url(../img/comp/slide3.jpg);
+    background-size: cover;
+}
+
+.slide4 {
+    background: url(../img/comp/slide4.jpg);
+    background-size: cover;
+}
+
+.slide5 {
+    background: url(../img/comp/slide5.jpg);
+    background-size: cover;
+}
+
+.slide6 {
+    background: url(../img/comp/slide6.jpg);
+    background-size: cover;
+}
+
+.slide {
+    height: 100vh;
+    width: 100%;
+    margin-top: -100vh;
+}
+
+.blayer {
+    background: rgba(23, 42, 72, 0.671);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin-top: -100vh;
+}
+
+
+header div nav {
+    color: white;
+    text-decoration: white;
+}
+
+header div nav a {
+    color: white;
+    text-decoration: white;
+}
+
+.titulo-slider {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-slider h2 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.separador-blanco {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4rem;
+    height: 1px;
+    border-bottom: white solid 4px;
+
+}
+
+.slider-btn-cont p {
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+}
+
+.slider-btn {
+    color: white;
+}
+
+.btn-slider-x {
+    padding: 15px 15px;
+    background: rgba(0, 0, 0, 0.609);
+}
+
+.btn-slider-y {
+    color: #172A48;
+    background: white;
+    cursor: default;
+}
+
+/* ====================================================================
+SECTION 01 // LA FIRMA
+==================================================================== */
+
+#la-firma .izquierda {
+    background: rgb(214, 214, 214);
+}
+
+.la-firma {
+    width: 90%;
+    margin: auto;
+    padding: 5% 0;
+}
+
+#la-firma .derecha .img {
+    background: url(../img/comp/slide2.jpg);
+}
+
+
+/* ====================================================================
+SECTION 02 // CONOZCANOS
+==================================================================== */
+
+.centrar {
+    text-align: center;
+}
+.conozcanos-blayer{
+    background: rgba(0, 0, 0, 0.76);
+
+    width: 100%;
+}
+#conozcanos {
+    background: url(../img/comp/slide4.jpg);
+    background-size: cover;
+}
+
+.conozcanos-cont {
+    padding: 5% 0;
+
+}
+
+@media only screen and (min-width: 1023px) {
+    .contenedor-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        margin: auto;
+        padding: 15px 0;
+    }
+
+    #la-firma {
+        display: flex;
+        margin-top: 24px;
+        border-top: #172A48 solid 24px;
+        border-bottom: #172A48 solid 24px;
+    }
+
+    #la-firma .izquierda {
+
+        background: rgb(214, 214, 214);
+        width: 50%;
+    }
+
+    #la-firma .derecha {}
+
+    .la-firma {
+        width: 80%;
+        margin: auto;
+        padding: 5% 0;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .conozcanos-cont {
+        width: 80%;
+        margin: auto;
+    }
+
+    .btn-center {
+        margin: auto;
+        width: 190px;
+    }
+
+    .btn {
+        background: #646464;
+        color: white;
+        padding: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    header div nav {
+        display: none;
+    }
+
+}
