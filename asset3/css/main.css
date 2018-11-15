@@ -13,6 +13,10 @@ p {
     line-height: 140%;
 }
 
+a {
+    text-decoration: none;
+}
+
 h2 {
     color: #646464;
 }
@@ -85,14 +89,22 @@ header div nav {
     color: white;
     text-decoration: white;
     width: 50%;
+    display: flex;
+    align-items: center;
+
 }
 
 header div nav a {
     color: white;
     text-decoration: white;
+    border-bottom: rgba(255, 255, 255, 0) 2px solid;
 }
 
-header div nav span{
+header div nav a:hover {
+    border-bottom: white 2px solid;
+}
+
+header div nav span {
     padding: 0 1.5%;
 }
 
@@ -107,6 +119,7 @@ header div nav span{
 .titulo-slider h2 {
     color: white;
     font-weight: 300;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
@@ -127,6 +140,7 @@ header div nav span{
 
 .slider-btn {
     color: white;
+
 }
 
 .btn-slider-x {
@@ -140,12 +154,33 @@ header div nav span{
     cursor: default;
 }
 
+.logo{
+    padding: 20px;
+    width: 50%;
+}
+
+.menuh{
+    opacity: .9;
+    height: 40px;
+    padding: 20px;
+}
+
+.menuh:hover{
+    background: black;
+    cursor: pointer;
+}
+
 /* ====================================================================
 SECTION 01 // LA FIRMA
 ==================================================================== */
 
 #la-firma .izquierda {
     background: rgb(214, 214, 214);
+    margin-top: 24px;
+}
+
+#la-firma .derecha{
+    display: none;
 }
 
 .la-firma {
@@ -153,6 +188,18 @@ SECTION 01 // LA FIRMA
     margin: auto;
     padding: 5% 0;
 }
+
+
+.ns {
+    width: 90%;
+    margin: auto;
+    padding: 5% 0;
+}
+
+.btn-center{
+    text-align: center;
+}
+
 
 #la-firma .derecha .img {
     background: url(../img/comp/slide2.jpg);
@@ -165,10 +212,13 @@ SECTION 02 // CONOZCANOS
 
 .centrar {
     text-align: center;
+    width: 260px;
 }
-.conozcanos-blayer{
+
+.conozcanos-blayer {
     width: 100%;
 }
+
 #conozcanos {
     background: url(../img/comp/bg.jpg);
     background-size: cover;
@@ -183,62 +233,108 @@ SECTION 02 // CONOZCANOS
 SECTION 03 // NUESTRA ESPECIALIDAD
 ==================================================================== */
 
-#nuestra-especialidad .derecha{
+#nuestra-especialidad .derecha {
     display: none;
 }
 
-#esp .derecha{
+#esp .derecha {
     background: url(../img/comp/slide5.jpg);
     background-size: cover;
 }
 
-.orange-row{
+.orange-row {
     background: #CF9355;
     padding: 2.5% 0;
 }
 
-#contacto{
+#contacto {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5% 0;
+    flex-direction: column;
 }
-#contacto img{
+
+#contacto img {
     padding: 2.5%;
 }
 
-.orange-row p{
+.orange-row p {
     color: white;
     font-weight: bold;
     text-align: center;
+    font-size: 22px;
 }
 
-footer{
+footer {
     background: #172A48;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer img{
+footer img {
     height: 50px;
     padding: 1.5% 0;
 }
-@media only screen and (min-width: 1023px) {
+
+.btn {
+    background: #646464;
+    color: white;
+    padding: 15px;
+}
+
+.btn:hover {
+    background: #172A48;
+    color: white;
+
+}
+.menuh{
+    display: inherit;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+
+    .slider-btn-cont{
+        display: inherit;
+    }
+
+    #contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0;
+        flex-direction: inherit;
+    }
+
+    .menuh{
+        display: none;
+    }
+
     .contenedor-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 85%;
         margin: auto;
-        padding: 15px 0;
+    }
+
+    #la-firma .derecha{
+        display: inherit;
     }
 
     #la-firma {
         display: flex;
         margin-top: 24px;
-        border-top: #172A48 solid 24px;
-        border-bottom: #172A48 solid 24px;
+        /*         border-top: #172A48 solid 24px;
+        border-bottom: #172A48 solid 24px; */
+    }
+
+    #la-firma .izquierda {
+        background: rgb(214, 214, 214);
+        margin-top: 0;
     }
 
     #la-firma .izquierda {
@@ -246,20 +342,19 @@ footer img{
         background: rgb(214, 214, 214);
         width: 50%;
     }
-    
+
     #esp .izquierda {
 
         background: rgb(214, 214, 214);
         width: 50%;
     }
 
-    #la-firma .derecha {}
-
     .la-firma {
         width: 80%;
         margin: auto;
         padding: 5% 0;
     }
+
     .ns {
         width: 80%;
         margin: auto;
@@ -281,27 +376,100 @@ footer img{
         width: 190px;
     }
 
-    .btn {
-        background: #646464;
-        color: white;
-        padding: 15px;
-    }
-    #nuestra-especialidad .derecha{
+
+    #nuestra-especialidad .derecha {
         display: inherit;
     }
 
-    #esp{
+    #esp {
         display: flex;
         justify-content: space-between;
-        border-top: #172A48 solid 24px;
-        border-bottom: #172A48 solid 24px;
+        /*         border-top: #172A48 solid 24px;
+        border-bottom: #172A48 solid 24px; */
+    }
+
+    header div nav {
+        color: white;
+        text-decoration: white;
+        width: 70%;
+        margin-left: 25%;
+    }
+
+}
+.fixspan{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    header div nav {
+        display: none;
+    }
+    .menuh{
+        display: inherit;
+    }
+    #nuestra-especialidad #esp .izquierda{
+        background: rgb(214, 214, 214);
+    }
+
+    #la-firma .izquierda {
+        background: rgb(214, 214, 214);
+        margin-top: 0;
+    }
+    .fixspan{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .botones{
+        display: flex;
+    }
+    .titulo-slider h2 {
+        color: white;
+        font-weight: 300;
+        font-size: 32px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .fixspan{
+        display: none;
     }
 
 }
 
-@media only screen and (max-width: 768px) {
-    header div nav {
+@media only screen and (max-width: 425px){
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fixspan{
+        display: inherit;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fixspan{
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 320px){
+    .slider-btn-cont {
+        display: none;
+    }
+    .fixspan{
+        display: none;
+    }
 }
