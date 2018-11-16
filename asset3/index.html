@@ -9,20 +9,45 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/slick.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
+    <div >
+        <a href="#inicio">
+        <img class="arriba" src="img/comp/arriba.png" alt=""></a></div>
+    <div class="menu-m">
+        <div onclick="cerrar()" class="cerrar">X</div>
+        <a href="#inicio">
+        <img class="logo" src="img/PMC_SERVICIOS_LEGALES-LOGO-BIG-1-2.png" alt="">
+    </a><nav>
+            <a href="#inicio">INICIO</a>
+            <span>|</span>
+            <a href="#la-firma">LA FIRMA</a>
+            <span>|</span>
+            <a href="areas.html">ÁREAS</a>
+            <span>|</span>
+            <a href="jurisdicciones.html">JURISDICCIONES</a>
+            <span>|</span>
+            <a href="#contacto">CONTACTO</a>
+            <span>|</span>
+            <a href="#"><img class="social-btn" src="img/logofb.png" alt=""></a>
+        </nav>
+    </div>
     <header>
-        <div class="contenedor-header">
+        <div  class="contenedor-header">
+            <a href="#inicio">
             <img class="logo" src="img/PMC_SERVICIOS_LEGALES-LOGO-BIG-1-2.png" alt="">
-            <img class="menuh" src="img/menuh.png" alt="">
+        </a>
+            <img onclick="abrir()" class="menuh" src="img/menuh.png" alt="">
             <nav>
+                <a href="#inicio">INICIO</a>
+                <span>|</span>
                 <a href="#la-firma">LA FIRMA</a>
                 <span>|</span>
-                <a href="#areas">ÁREAS</a>
+                <a href="areas.html">ÁREAS</a>
                 <span>|</span>
-                <a href="#jurisdicciones">JURISDICCIONES</a>
+                <a href="jurisdicciones.html">JURISDICCIONES</a>
                 <span>|</span>
                 <a href="#contacto">CONTACTO</a>
                 <span>|</span>
@@ -32,8 +57,8 @@
     </header>
 
     <div id="slider" class="onlydesktop">
-        <div class="titulo-slider">
-            <h2>ALIADOS CON LA <strong>EXCELENCIA</strong></h2>
+        <div id="inicio" class="titulo-slider">
+            <h2><span class="enfasis">ALIADOS</span> CON LA <strong>EXCELENCIA</strong></h2>
             <div class="separador-blanco"></div>
         </div>
         <div class="slide" id="slide"></div>
@@ -41,7 +66,7 @@
         <nav class="slider-btn-cont">
             <p class="slider-btn">
                 <span id="slide1" class="btn-slider-x">CONFIDENCIALIDAD</span>
- 
+
                 <span id="slide2" class="btn-slider-x">RESPONSABILIDAD</span>
                 <br class="fixspan">
                 <span id="slide3" class="btn-slider-x">EFECTIVIDAD</span>
@@ -62,11 +87,13 @@
                 <div class="la-firma">
                     <h2>LA FIRMA</h2>
                     <p>
-                        Con 12 años de experiencia, PMC Servicios Legales Internacionales es reconocida como una firma
+                        Con 12 años de experiencia, <strong>PMC Servicios Legales Internacionales</strong> es
+                        reconocida como una firma
                         de
                         abogados líder en Panamá, con perfil internacional, que se destaca por su liderazgo en diversas
                         áreas del derecho. <br><br>
-                        PMC Servicios Legales Internacionales siempre comprometida con nuestros clientes, con la firme
+                        <strong>PMC Servicios Legales Internacionales</strong> siempre comprometida con nuestros
+                        clientes, con la firme
                         intención de prestar una asesoría integral y especializada. Contamos con un equipo
                         multidisciplinario especializado en las diversas áreas del Derecho, quienes ejercen apegados a
                         los
@@ -108,12 +135,20 @@
                     </div>
                 </div>
                 <div class="btn-center">
-                   <a href="#contacto"><span class="btn">CONÓZCANOS</span></a>
+                    <a href="#contacto"><span class="btn">CONÓZCANOS</span></a>
                 </div>
             </div>
         </div>
 
     </section>
+
+
+    <section id="areas">
+        <div class="areas-cont">
+
+        </div>
+    </section>
+
 
     <section id="nuestra-especialidad" class="">
         <div id="esp">
@@ -126,7 +161,8 @@
                 <div class="ns">
                     <h2>NUESTRA ESPECIALIDAD</h2>
                     <p>
-                        PMC Servicios Legales Internacionales se especializa en brindar la asesoría a nuestros clientes
+                        <strong>PMC Servicios Legales Internacionales</strong> se especializa en brindar la asesoría a
+                        nuestros clientes
                         basadas en sus necesidades comerciales apoyando el inicio de operaciones y aperturas
                         empresariales en el desarrollo de nuevos negocios. <br><br>
 
@@ -147,7 +183,7 @@
     <section id="conozcanos">
         <div class="conozcanos-blayer"></div>
         <div class="conozcanos-cont">
-            <div class="botones">
+            <div class="botones wow fadeIn">
                 <div class="centrar">
                     <img src="img/soportel.png" alt="">
                     <h3>DERECHO MERCANTIL <br> Y CORPORATIVA</h3>
@@ -162,28 +198,37 @@
                 </div>
             </div>
             <div class="btn-center">
-                    <a href="#contacto"><span class="btn">CONÓZCANOS</span></a>
+                <a href="#contacto"><span class="btn">CONÓZCANOS</span></a>
             </div>
         </div>
 
     </section>
 
-    <section class="orange-row">
+    <section class="orange-row wow fadeIn">
         <p>¿ASESORÍA LEGAL? ESTAMOS ESPERANDO TU CONSULTA.</p>
     </section>
 
     <section id="contacto">
-        <img src="img/mapagoogle.png" alt="">
+        <div class="gm">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3940.9111420070612!2d-79.51984!3d8.980324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f7d590dc09caff!2sWorld+Trade+Center+Panama!5e0!3m2!1ses-419!2ses!4v1542318788194"
+                width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
         <img src="img/contacto.png" alt="">
     </section>
 
     <footer>
         <img src="img/PMC_SERVICIOS_LEGALES-LOGO-BIG-1-2.png" alt="">
+        <p>© Copyright 2018 | PMC SERVICIOS LEGALES INTERNACIONALES Member of PMC GROUP. | Todos los derechos
+            reservados. </p>
     </footer>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

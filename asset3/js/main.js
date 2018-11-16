@@ -1,17 +1,19 @@
-/* $(window).scroll(function(){
+$(window).scroll(function(){
     //more then or equals to
     if($(window).scrollTop() >= 500 ){
-        $( ".logocont" ).css( "background", "#172a48" );
+        $( "header" ).css( "background", "#172a48" );
    
     //less then 100px from top
     } else {
        
-   $( ".logocont" ).css( "background", "none" );
+/*    $( "header" ).css( "background", "none" ); */
     }
   });
 
   var ancho = screen.width;
- */
+
+
+$(window).resize(function(){location.reload();});
 
 //========================================================================
 //    slider
@@ -110,28 +112,33 @@ var hLaFirma = $('#la-firma .izquierda').height();
 var wLaFirma = $('#la-firma .izquierda').width();
 var hns = $('#esp .izquierda').height();
 var wns = $('#esp .izquierda').width();
+var jheaderh = $('header').height();
+
+$('.j-headerfix').css(
+    'height', jheaderh
+);
 
 if (w >= 1024) {
     // hacer la imagen del mismo tamaño que el texto en pantallas mayores a 1024px
     $('.autohw').css({
-        'height': hLaFirma,
+       /*  'height': hLaFirma, */
         'width': wLaFirma,
         'backgroundSize': 'cover'
     });
     $('.autons').css({
-        'height': hns,
+        /* 'height': hns, */
         'width': wns,
         'backgroundSize': 'cover'
     });
 } else if (w <= 1023) {
     // hacer la imagen del mismo tamaño que el texto en pantallas menores a 1024px
     $('.autohw').css({
-        'height': hLaFirma,
+       /*  'height': hLaFirma, */
         'width': w,
         'backgroundSize': 'cover'
     });
     $('.autons').css({
-        'height': hns,
+        /* 'height': hns, */
         'width': w,
         'backgroundSize': 'cover'
     });
@@ -140,16 +147,28 @@ if (w >= 1024) {
 
 
 
+
 //========================================================================
 //    MENU MOBILE
 //========================================================================
+$('.menu-m').hide();
+function cerrar(){
+    $('.menu-m').hide();
+    $('body').css('overflow','initial')
+}
 
+function abrir(){
+    
+    $('.menu-m').slideDown();
+    $('body').css('overflow','hidden')
+}
 
 
 //========================================================================
 //    SMOOTH SCROLL
 //========================================================================
 
+var hheader = $('header').height();
 
 // Select all links with hashes
 $('a[href*="#"]')
@@ -164,7 +183,7 @@ $('a[href*="#"]')
         ) {
             // Figure out element to scroll to
             var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            target = target.length ? target: $('[name=' + this.hash.slice(1) + ']');
             // Does a scroll target exist?
             if (target.length) {
                 // Only prevent default if animation is actually gonna happen

@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'palatinoregular';
+    src: url('../font/palatino-webfont.woff2') format('woff2'),
+         url('../font/palatino-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'palatinoregular';
     overflow-x: hidden;
 
 }
@@ -752,20 +761,25 @@ SECTION FOOTER
 
 footer {
     background: #172A48;
-    height: 30vh;
+
+}
+.footer{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-footer p {
-    text-align: center;
+    width: 80%;
+    margin: auto;
     color: white;
 }
 
-.logofooter {
-    margin: auto;
+.footer p{
+/*     width: 70%; */
+    padding-left: 24px;
+    color: rgb(182, 182, 182);
+}
+footer img {
+    height: 50px;
+    padding: 1.5% 0;
 }
 
 
@@ -1443,29 +1457,6 @@ SECTION Contacto
     }
 
 
-
-    /* ==================================================================================
-SECTION FOOTER
-=====================================================================================*/
-
-    footer {
-        background: #172A48;
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer p {
-        text-align: center;
-        color: white;
-    }
-
-    .logofooter {
-        margin: auto;
-    }
-
 }
 
 
@@ -1652,18 +1643,5 @@ SECTION FOOTER
 
     .paddd{
         padding-bottom: 25px;
-    }
-
-    footer {
-        background: #172A48;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .logofooter {
-        margin: 15px;
-        width: 300px;
     }
 }

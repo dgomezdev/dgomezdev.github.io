@@ -1,0 +1,32 @@
+body{
+    width: 500px;
+    margin: auto;
+    text-align: justify;
+    color: #172A48;
+}
+
+div{
+    background: rgb(236, 236, 236);
+    padding: 5%;
+    border-bottom: #172A48 8px solid;
+}
+@font-face {
+    font-family: 'palatinoregular';
+    src: url('font/palatino-webfont.woff2') format('woff2'),
+         url('font/palatino-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.palatino{
+    font-family: 'palatinoregular';
+}
+
+.amari{
+    font-family: 'Amiri', serif;
+}
+
+.crinsom{
+    font-family: 'Crimson Text', serif;
+}
