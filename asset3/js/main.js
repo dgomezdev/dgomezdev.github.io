@@ -159,7 +159,7 @@ function cerrar(){
 
 function abrir(){
     
-    $('.menu-m').slideDown();
+    $('.menu-m').show();
     $('body').css('overflow','hidden')
 }
 

@@ -11,6 +11,7 @@
 
 }
 
+
 .arriba{
     position: fixed;
     z-index: 9999999;
@@ -32,8 +33,8 @@ body {
 }
 
 .menu-m{
-    position: absolute;
-    z-index: 99999;
+    position: fixed;
+    z-index: 999999999;
     height: 100vh;
     width: 100%;
     background: #172A48;
@@ -41,7 +42,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    display: none;
 }
 
 .menu-m nav{
@@ -175,7 +175,7 @@ header div nav a:hover {
 }
 
 header div nav span {
-    padding: 0 1.5%;
+    padding: 0 14px;
 }
 
 .titulo-slider {
@@ -240,6 +240,10 @@ header div nav span {
     cursor: pointer;
 }
 
+.social-btn{
+    padding: 0 6px;
+}
+
 /* ====================================================================
 SECTION 01 // LA FIRMA
 ==================================================================== */
@@ -282,7 +286,7 @@ SECTION 02 // CONOZCANOS
 
 .centrar {
     text-align: center;
-    width: 290px;
+    width: 310px;
 }
 
 .conozcanos-blayer {
@@ -468,9 +472,9 @@ footer img{
         text-align: center;
         color: #dadada;
     }
-    .menu-m{
+  /*   .menu-m{
         display: none;
-    }
+    } */
     .slider-btn-cont{
         display: inherit;
     }
@@ -593,7 +597,7 @@ footer img{
     .fixspan{
         display: none;
     }
-    .menu-m{
+/*     .menu-m{
         display: none;
         position: absolute;
         z-index: 99999;
@@ -604,7 +608,7 @@ footer img{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
+    } */
 }
 
 @media only screen and (max-width: 768px){
@@ -621,7 +625,7 @@ footer img{
     .fixspan{
         display: none;
     }
-    .menu-m{
+/*     .menu-m{
         display: none;
         position: absolute;
         z-index: 99999;
@@ -632,7 +636,7 @@ footer img{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
+    } */
 }
 
 @media only screen and (max-width: 490px){
@@ -646,7 +650,7 @@ footer img{
     .fixspan{
         display: inherit;
     }
-    .menu-m{
+/*     .menu-m{
         display: none;
         position: absolute;
         z-index: 99999;
@@ -657,7 +661,7 @@ footer img{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
+    } */
     footer {
         background: #172A48;
         display: flex;
@@ -682,7 +686,7 @@ footer img{
     .fixspan{
         display: none;
     }
-    .menu-m{
+/*     .menu-m{
         display: none;
         position: absolute;
         z-index: 99999;
@@ -693,7 +697,7 @@ footer img{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
+    } */
     .onlydesktop{
         background: #172A48;
     }
@@ -706,7 +710,7 @@ footer img{
     .fixspan{
         display: none;
     }
-    .menu-m{
+/*     .menu-m{
         display: none;
         position: absolute;
         z-index: 99999;
@@ -717,5 +721,5 @@ footer img{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
+    } */
 }
