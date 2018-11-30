@@ -5,6 +5,13 @@
     }
 }
 
+textarea, select, input, button { outline: none; }
+
+.tuitear{
+    color: rgba(255,51,94,1);
+    padding-left: 5px;
+}
+
 #preloader{
     position: fixed;
     width: 100vw;
@@ -17,7 +24,7 @@
     z-index: 9999;
 }
 
-#preloader svg{
+#preloader img{
     height: 100%;
     max-height: 180.217px;
     width: 70vw;
@@ -96,7 +103,8 @@ header{
 
 .text{
     position: fixed;
-    /* top: calc(100vh - 29px); */
+    left: 0;
+    bottom: 0;
     display: flex;
     width: 100%;
     border: #acacac solid 1px;
@@ -107,6 +115,16 @@ header{
     height: 24px;
     padding-left: 8px;
     background: none;
+    border: none;
+}
+
+#textoInicial:hover{
+    border: none;
+}
+#textoInicial:focus{
+    border: none;
+}
+#textoInicial:active{
     border: none;
 }
 
@@ -172,6 +190,11 @@ header{
     margin-bottom: 5.5%;
 }
 
+.menu-mobile{
+    display: none;
+    height: 40px;
+}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -193,6 +216,8 @@ header{
 
     .text{
         position: fixed;
+        left: 0;
+        bottom: 95%;
         top: 0;
         left: 50%;
         display: flex;
@@ -226,5 +251,28 @@ header{
 
 
 @media only screen and (max-width: 420px) {
+
+    header{
+        top: 0;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        position: fixed;
+    }
+    .menu-mobile{
+        display: inherit;
+        height: 40px;
+    }
+    .mainlogo{
+        display: none;
+    }
+
+    #cont{
+        margin-top: 12vh;
+        margin-bottom: 5.5%;
+    }
 
 }

@@ -1,9 +1,7 @@
-
-
 //Prealoader
 
-function iniciar(){
-    $('#preloader').css('marginTop','-50%');
+function iniciar() {
+    $('#preloader').css('marginTop', '-50%');
     setTimeout(() => {
         $('#preloader').hide();
     }, 400);
@@ -14,7 +12,7 @@ var formatox = '</span></br><p id="textOut" class="bg hide">'
 var cerrarFormato = '</p>'
 
 function reemplazar() {
-    var originales =  document.getElementById('textoInicial').value;
+    var originales = document.getElementById('textoInicial').value;
 
     //obtener el valor de cada letra en el text area
     var todasLasPalabras = document.getElementById('textoInicial').value.split('');
@@ -22,7 +20,7 @@ function reemplazar() {
     //definiendo la variable donde se guardará todo el texto
     var salida = '';
 
-    // ciclo con if para cerificar si la letra es vocal y luego reemplazar por una i
+    // ciclo con if para verificar si la letra es vocal o no y luego reemplazar por una i
     for (let index = 0; index < todasLasPalabras.length; index++) {
         todasLasPalabras[index] = todasLasPalabras[index].toLowerCase();
         //Identificando las vocales sin tilde
@@ -50,11 +48,31 @@ function reemplazar() {
         //Guardando cada letra de nuevo para dar salida
         salida += todasLasPalabras[index];
     }
+    // excepciones
 
+    salida = salida.replace(/qii/g, "qui");
+/*     salida = salida.replace(/ca/g, "qui");
+    salida = salida.replace(/co/g, "qui");
+    salida = salida.replace(/cu/g, "qui");
+    salida = salida.replace(/ci/g, "qui"); */
+    salida = salida.replace(/gii/g, "gui");
+
+
+     //agregando botón para compartir como un tuit
+
+     var tuit = '<a class="tuitear" href="https://twitter.com/intent/tweet?text=';
+
+     contenidoTuit = salida.replace(/ /g, "%20") ;
+     /* Aprendiendo % 20 a % 20 crear % 20 un % 20 enlace % 20 para % 20 compartir % 20 en % 20 Twitter */
+ 
+     var postTuit = '&url=https%3A%2F%2Fdgomezdev.github.io%2Fmimimi&hashtags=mimimi" target="_blank">';
+ 
+     var endTuit = '</a> ';
+
+     var share = tuit + contenidoTuit + postTuit + 'Tuitear Traducción' + endTuit;
 
     // output el nuevo texto en un parrafo <p>
-    $('#cont').append(formato + originales + formatox + salida + cerrarFormato);
-
+    $('#cont').append(formato + originales + share + formatox + salida + cerrarFormato);
 
     setTimeout(() => {
         $('.hide').removeClass('hide');
@@ -65,6 +83,8 @@ function reemplazar() {
             }, 1000);
         });
     }, 200);
+    //limpiar el input
+
 
 }
 //Activar con la tecla enter
@@ -74,14 +94,3 @@ $('#textoInicial').keydown(function (event) {
         event.preventDefault();
     }
 });
-
-//fix de posición del input text
-var alturaTotal = innerHeight;
-var inputTop = $('.text').height();
-var alturaFinal = alturaTotal - inputTop;
-$('.text').css('top', alturaFinal);
-
-
-//agregando botón para compartir como un tuit
-
-/* <a href="https://twitter.com/intent/tweet?text=Aprendiendo%20a%20crear%20un%20enlace%20para%20compartir%20en%20Twitter&url=https%3A%2F%2Fparzibyte.me%2Fblog&via=parzibyte&hashtags=programación,html" target="_blank">Twittear</a> */
