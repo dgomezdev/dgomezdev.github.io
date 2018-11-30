@@ -5,7 +5,9 @@
     }
 }
 
-textarea, select, input, button { outline: none; }
+input { outline: none; }
+input:active { outline: none; }
+input:focus { outline: none; }
 
 .tuitear{
     color: rgba(255,51,94,1);

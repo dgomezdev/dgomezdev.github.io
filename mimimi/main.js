@@ -51,10 +51,10 @@ function reemplazar() {
     // excepciones
 
     salida = salida.replace(/qii/g, "qui");
-/*     salida = salida.replace(/ca/g, "qui");
-    salida = salida.replace(/co/g, "qui");
-    salida = salida.replace(/cu/g, "qui");
-    salida = salida.replace(/ci/g, "qui"); */
+    salida = salida.replace(/ica/g, "qui");
+    salida = salida.replace(/ico/g, "qui");
+    salida = salida.replace(/icu/g, "qui");
+    salida = salida.replace(/ci/g, "qui");
     salida = salida.replace(/gii/g, "gui");
 
 
