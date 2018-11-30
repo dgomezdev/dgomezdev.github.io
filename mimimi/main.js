@@ -3,10 +3,10 @@
 //Prealoader
 
 function iniciar(){
-    $('#preloader').css('marginTop','-100%');
+    $('#preloader').css('marginTop','-50%');
     setTimeout(() => {
         $('#preloader').hide();
-    }, 1000);
+    }, 400);
 }
 
 var formato = '<span class="originales">'
@@ -74,3 +74,14 @@ $('#textoInicial').keydown(function (event) {
         event.preventDefault();
     }
 });
+
+//fix de posición del input text
+var alturaTotal = innerHeight;
+var inputTop = $('.text').height();
+var alturaFinal = alturaTotal - inputTop;
+$('.text').css('top', alturaFinal);
+
+
+//agregando botón para compartir como un tuit
+
+/* <a href="https://twitter.com/intent/tweet?text=Aprendiendo%20a%20crear%20un%20enlace%20para%20compartir%20en%20Twitter&url=https%3A%2F%2Fparzibyte.me%2Fblog&via=parzibyte&hashtags=programación,html" target="_blank">Twittear</a> */
