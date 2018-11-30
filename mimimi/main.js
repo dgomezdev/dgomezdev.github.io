@@ -1,10 +1,10 @@
 //Prealoader
 
 function iniciar() {
-    $('#preloader').css('marginTop', '-50%');
+    $('#preloader').css({'marginTop': '-100%','transition':'1.2s'});
     setTimeout(() => {
         $('#preloader').hide();
-    }, 400);
+    }, 1300);
 }
 
 var formato = '<span class="originales">'
@@ -85,9 +85,6 @@ function reemplazar() {
 
     setTimeout(() => {
         $('.hide').removeClass('hide');
-
-
-
         // Scroll to bottom cada vez que se agregue una traducción nueva
         $(function () {
             $("html, body").animate({
