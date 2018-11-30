@@ -53,9 +53,13 @@ function reemplazar() {
     salida = salida.replace(/qii/g, "qui");
     salida = salida.replace(/ica/g, "qui");
     salida = salida.replace(/ico/g, "qui");
-    salida = salida.replace(/icu/g, "qui");
+    salida = salida.replace(/cu/g, "qui");
     salida = salida.replace(/ci/g, "qui");
     salida = salida.replace(/gii/g, "gui");
+
+    salida = salida.replace(/cú/g, "quí");
+    salida = salida.replace(/cí/g, "quí");
+    salida = salida.replace(/gií/g, "guí");
 
 
      //agregando botón para compartir como un tuit
