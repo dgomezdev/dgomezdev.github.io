@@ -148,6 +148,7 @@ header{
 
 .enter:hover{
     background: #00000040;
+    cursor: pointer;
 }
 
 
@@ -197,7 +198,14 @@ header{
     height: 40px;
 }
 
+.bg-text{
+display: none;
+}
 
+.bg-text div img{
+   height: 48px;
+   transform: rotate(90deg);
+}
 
 @media only screen and (min-width: 768px) {
     header{
@@ -209,6 +217,7 @@ header{
         justify-content: center;
         color: white;
         position: fixed;
+        
     }
 
     .mainlogo{
@@ -226,6 +235,7 @@ header{
         width: 50%;
         border: #acacac solid 1px;
         background: #e7e7e7;
+        height: 42px;
         
     }
 
@@ -275,6 +285,26 @@ header{
     #cont{
         margin-top: 12vh;
         margin-bottom: 5.5%;
+    }
+
+    .text,#textoInicial{
+        height: 42px;
+    }
+
+    .bg-text{
+        padding-top: 45%;
+        position: absolute;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #acacac;
+        z-index: -9;
+    }
+    
+    .bg-text div img{
+       height: 48px;
+       transform: rotate(90deg);
     }
 
 }

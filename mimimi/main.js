@@ -12,6 +12,8 @@ var formatox = '</span></br><p id="textOut" class="bg hide">'
 var cerrarFormato = '</p>'
 
 function reemplazar() {
+
+
     var originales = document.getElementById('textoInicial').value;
 
     //obtener el valor de cada letra en el text area
@@ -56,30 +58,36 @@ function reemplazar() {
     salida = salida.replace(/cu/g, "qui");
     salida = salida.replace(/ci/g, "qui");
     salida = salida.replace(/gii/g, "gui");
-
     salida = salida.replace(/cú/g, "quí");
     salida = salida.replace(/cí/g, "quí");
     salida = salida.replace(/gií/g, "guí");
 
 
-     //agregando botón para compartir como un tuit
+    //agregando botón para compartir como un tuit
 
-     var tuit = '<a class="tuitear" href="https://twitter.com/intent/tweet?text=';
+    var tuit = '<a class="tuitear" href="https://twitter.com/intent/tweet?text=';
 
-     contenidoTuit = salida.replace(/ /g, "%20") ;
-     /* Aprendiendo % 20 a % 20 crear % 20 un % 20 enlace % 20 para % 20 compartir % 20 en % 20 Twitter */
- 
-     var postTuit = '&url=https%3A%2F%2Fdgomezdev.github.io%2Fmimimi&hashtags=mimimi" target="_blank">';
- 
-     var endTuit = '</a> ';
+    contenidoTuit = salida.replace(/ /g, "%20");
+    /* Aprendiendo % 20 a % 20 crear % 20 un % 20 enlace % 20 para % 20 compartir % 20 en % 20 Twitter */
 
-     var share = tuit + contenidoTuit + postTuit + 'Tuitear Traducción' + endTuit;
+    var postTuit = '&url=https%3A%2F%2Fdgomezdev.github.io%2Fmimimi&hashtags=mimimi" target="_blank">';
+
+    var endTuit = '</a> ';
+
+    var share = tuit + contenidoTuit + postTuit + 'Tuitear Traducción' + endTuit;
 
     // output el nuevo texto en un parrafo <p>
     $('#cont').append(formato + originales + share + formatox + salida + cerrarFormato);
 
+    //esconder el texto guia
+    $('.bg-text').css('opacity', '0');
+
+
     setTimeout(() => {
         $('.hide').removeClass('hide');
+
+
+
         // Scroll to bottom cada vez que se agregue una traducción nueva
         $(function () {
             $("html, body").animate({
@@ -87,7 +95,10 @@ function reemplazar() {
             }, 1000);
         });
     }, 200);
+
     //limpiar el input
+    document.getElementById('textoInicial').value = ''
+
 
 
 }
