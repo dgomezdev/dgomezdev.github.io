@@ -94,7 +94,7 @@ function reemplazar() {
     }, 200);
 
     //limpiar el input
-    document.getElementById('textoInicial').value = ''
+    document.getElementById('textoInicial').value = '';
 
 
 
