@@ -1,0 +1,191 @@
+@keyframes colors {
+  0% {
+    border-color: #0267D7;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border-color: #0267D7;
+  }
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  background: #eeeeee;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  background: url(../img/bg.png);
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.logo-menu {
+  padding: 16px;
+  border: #0267D7 4px solid;
+  border-radius: 50%;
+  height: 41px;
+  width: 45px;
+  cursor: pointer;
+  margin-top: 12px;
+  animation: colors 4s infinite;
+}
+
+.social-logos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.social-logos a {
+  margin: 18px 0;
+  transition: 0.4s;
+}
+.social-logos a:hover {
+  transform: scale(0.9);
+  transition: 0.4s;
+}
+
+.menu-close {
+  padding-bottom: 24px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  background: #080808;
+  height: 100vh;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(300px);
+  transition: 0.4s;
+}
+
+.move-menu {
+  transform: translateX(0px);
+}
+
+#textfxContainer {
+  max-width: 320px;
+  margin: auto;
+  margin-top: 50px;
+}
+#textfxContainer .profile-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+#textfxContainer .profile-head .profile-img {
+  height: 100px;
+  width: 100px;
+  background: url(../img/profile.jpg);
+  background-position: center;
+  background-size: cover;
+  border-left: 9px #0267D7 solid;
+}
+#textfxContainer .profile-head h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  border-right: 9px #0267D7 solid;
+  padding: 5px 12px;
+  background: #080808;
+  color: white;
+}
+#textfxContainer .profile-head p {
+  text-align: right;
+  width: 50%;
+  margin-top: 0;
+  margin-left: auto;
+  border-right: 9px #0267D7 solid;
+  padding: 5px 12px;
+  background: #080808;
+  color: white;
+}
+#textfxContainer li {
+  margin: 14px 0;
+  width: 50%;
+  transition: 0.4s;
+  padding: 5px 12px;
+  background: #080808;
+  color: white;
+  border-left: #0267D7 5px solid;
+}
+#textfxContainer li:hover {
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: 0.4s;
+}
+
+footer {
+  background: #161616;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer .wrapper {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+footer .wrapper .logo-foot {
+  height: 41px;
+  width: 45px;
+  cursor: pointer;
+}
+footer .wrapper .back {
+  opacity: 0;
+}
+footer .wrapper .menu-foot {
+  width: 45px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.line-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 35%;
+  height: 12px;
+  width: 35%;
+  background: #080808;
+  margin: auto;
+}
+
+.modal {
+  top: 0;
+  height: 88vh;
+  width: 90%;
+  background: #161616e7;
+  position: fixed;
+  left: 5%;
+  z-index: 4;
+  color: white;
+  transform: translateY(900px);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.modal-appear {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+/*# sourceMappingURL=main.css.map */

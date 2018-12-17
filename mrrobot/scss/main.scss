@@ -1,0 +1,214 @@
+$bg: rgb(238, 238, 238);
+$font: 'Roboto Mono',
+monospace;
+$profile-pic: url(../img/profile.jpg);
+$azul: #0267D7;
+$negro: #080808;
+$gris: #161616;
+$blanco: white;
+
+
+@keyframes colors{
+    0%{
+        border-color: $azul;
+    }
+
+    50%{
+        border-color: $blanco;
+    }
+
+    100%{
+        border-color: $azul;
+    }
+    
+}
+
+
+@mixin padNbg {
+    padding: 5px 12px;
+    background: $negro;
+    color: $blanco;
+}
+
+body {
+    font-family: $font;
+    background: $bg;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background: url(../img/bg.png);
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo-menu {
+    padding: 16px;
+    border: $azul 4px solid;
+    border-radius: 50%;
+    height: 41px;
+    width: 45px;
+    cursor: pointer;
+    margin-top: 12px;
+    animation: colors 4s infinite;
+}
+.social-logos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    a{
+        margin: 18px 0;
+        transition: .4s;
+        &:hover{
+            transform: scale(.9);
+            transition: .4s;
+        }
+    }
+}
+
+.menu-close{
+    padding-bottom: 24px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    background: $negro;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(300px);
+    transition: .4s;
+}
+
+.move-menu{
+    transform: translateX(0px);
+}
+
+#textfxContainer {
+    max-width: 320px;
+    margin: auto;
+    margin-top: 50px;
+
+    .profile-head {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        .profile-img {
+            height: 100px;
+            width: 100px;
+            background: $profile-pic;
+            background-position: center;
+            background-size: cover;
+            border-left: 9px $azul solid;
+        }
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            font-size: 24px;
+            border-right: 9px $azul solid;
+            @include padNbg;
+        }
+
+        p {
+            text-align: right;
+            width: 50%;
+            margin-top: 0;
+            margin-left: auto;
+            border-right: 9px $azul solid;
+            @include padNbg;
+        }
+    }
+
+    li {
+        margin: 14px 0;
+        width: 50%;
+        transition: .4s;
+        @include padNbg;
+        border-left: $azul 5px solid;
+
+        &:hover {
+            cursor: pointer;
+            padding: 8px 12px;
+            transition: .4s;
+        }
+    }
+}
+
+footer {
+    background: $gris;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    .wrapper {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+        margin: auto;
+
+        .logo-foot {
+            height: 41px;
+            width: 45px;
+            cursor: pointer;
+        }
+
+        .back{
+            opacity: 0;
+        }
+
+        .menu-foot {
+            width: 45px;
+            height: 23px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.line-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 35%;
+    height: 12px;
+    width: 35%;
+    background: $negro;
+    margin: auto;
+}
+
+.modal{
+    top: 0;
+    height: 88vh;
+    width: 90%;
+    background: #161616e7;
+    position: fixed;
+    left: 5%;
+    z-index: 4;
+    color: $blanco;
+    transform: translateY(900px);
+    opacity: 0;
+    transition: .4s;
+}
+
+.modal-appear{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: .4s;
+}
+
