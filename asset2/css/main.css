@@ -7,6 +7,24 @@
 
 }
 
+@keyframes boat {
+    0%{
+        transform: rotate(0deg) scale(.9)
+    }
+    20%{
+        transform: rotate(-5deg) scale(.8) translateY(20px)
+    }
+    50%{
+        transform: rotate(0deg) scale(.8) translateY(20px)
+    }
+    80% {
+        transform: rotate(5deg) scale(.8) translateY(20px)
+    }
+    100% {
+        transform: rotate(0deg) scale(.9)
+    }
+}
+
 body {
     font-family: 'palatinoregular';
     overflow-x: hidden;
@@ -247,9 +265,8 @@ SECTION 01
 }
 
 .logogrande {
-    width: 350px;
-    height: 350px;
-    margin: auto;
+    animation: boat 5s ease infinite;
+    transform-origin: 50% 50%;
 }
 
 .contenido-section {
@@ -506,10 +523,6 @@ SECTION 04
     /* width: 420px; */
     padding: 24px;
     max-width: 600px;
-}
-
-.ayc-text p {
-    margin-top: 60px;
 }
 
 .ayc-text h2 {
@@ -928,10 +941,10 @@ SECTION 01
         font-size: 18px;
     }
 
-    .logogrande {
+  /*   .logogrande {
         width: 350px;
         height: 350px;
-    }
+    } */
 
     .contenido-section {
         display: flex;
@@ -1188,10 +1201,6 @@ SECTION 04
         /* width: 420px; */
         padding: 24px;
         max-width: 600px;
-    }
-
-    .ayc-text p {
-        margin-top: 60px;
     }
 
     .ayc-text h2 {
