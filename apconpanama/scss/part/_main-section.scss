@@ -1,9 +1,19 @@
 .main-bg{
-    background-image: url(../img/bg-shape.svg);
-    background-position-x: right;
+    background-image: url(../img/02.png);
+    background-position-x: 85%;
+    background-position-y: 62%;
     background-repeat: no-repeat;
-    background-size: contain;
-    .container{
+    background-size: 545px;
+    h1{
+        font-size: 64px;
+    }
+    p{
+        text-align: justify;
+        width: 80%;
+    }
+    .contenedor{
+        width: 80%;
+        margin: auto;
         padding-top: 80px;
         @media screen and (min-width: 1366px){
         display: grid;
@@ -17,6 +27,6 @@
 .main-img{
     height: 480px;
     width: 350px;
-    background: url(../img/0.jpg);
+    //background: url(../img/0.jpg);
     background-size: cover;
 }

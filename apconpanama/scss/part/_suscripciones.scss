@@ -1,6 +1,6 @@
 .suscripciones{
-    height: 100vh;
-
+    height: 70vh;
+    margin-bottom: 5%;
     @media screen and (min-width: 1366px){
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -21,8 +21,8 @@
 
     .left{
         div{
-            height: 480px;
-            width: 480px;
+            height: 100%;
+            width: 100%;
         }
     }
 }
