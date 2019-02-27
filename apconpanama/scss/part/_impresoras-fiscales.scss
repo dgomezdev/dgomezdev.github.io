@@ -1,0 +1,16 @@
+.impresoras-fiscales{
+   
+    .container{
+        min-height: 100vh;
+        @media screen and (min-width: 1366px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .impresoras-fiscales-pic{
+            div{
+                height: 500px;
+                width: 500px;
+            }
+        }
+    }
+}

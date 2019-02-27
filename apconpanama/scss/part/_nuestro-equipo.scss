@@ -1,0 +1,18 @@
+.nuestro-equipo{
+    height: 100vh;
+    
+    .container{
+        @media screen and (min-width: 1366px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .circle{
+        background: url(../img/2.jpg);
+        background-size: cover;
+        height: 480px;
+        width: 480px;
+        border-radius: 50%;
+    }
+}

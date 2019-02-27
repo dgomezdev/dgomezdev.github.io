@@ -1,0 +1,98 @@
+$theme-colors: (
+  "primary": #185F53,
+  "secondary": #FCC03E,
+  "dark": #111,
+  "gray": #646464,
+  "black": black,
+);
+
+$verde: #185F53;
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar-nav .active{
+    border-bottom: 4px solid $verde;
+}
+
+.nav-btn{
+    padding: .4em 2em !important;
+}
+
+.separador{
+    border-bottom: 4px solid $verde;
+    width: 40%; 
+    margin-bottom: 1em;
+}
+
+.d-fle-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-next-icon{
+    background: #FCC03E !important;
+    color: black !important;
+    padding: 14px 8px;
+}
+
+input[type="text"]{
+    width: 400px;
+    height: 45px;
+}
+
+.untit{
+    .container{
+    
+        @media screen and (min-width: 1366px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .content{
+            .padd{
+                padding: 4em;
+            }
+            .superseparador{
+                height: 1.5em;
+                width: 80px;
+                background: $verde;
+            }
+            h2{
+                font-size: 54px;
+            }
+        }
+    }
+}
+
+.footer{
+    padding: 150px 0;
+    background: #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    color: white;
+}
+
+.padd{
+    padding: 2em 0;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 2;
+}
+
+@import "part/main-section";
+@import "part/nuestro-equipo";
+@import "part/mision-vision";
+@import "part/impresoras-fiscales";
+@import "part/servicios";
+@import "part/entrenamientos";
+@import "part/suscripciones";
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "bootstrap";
+

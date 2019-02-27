@@ -1,0 +1,14 @@
+.entrenamiento{
+    .container{
+        min-height: 100vh;
+        @media screen and (min-width: 1366px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .entrenamiento-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

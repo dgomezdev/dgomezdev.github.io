@@ -1,0 +1,22 @@
+.main-bg{
+    background-image: url(../img/bg-shape.svg);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .container{
+        padding-top: 80px;
+        @media screen and (min-width: 1366px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+        }
+    }
+
+}
+
+.main-img{
+    height: 480px;
+    width: 350px;
+    background: url(../img/0.jpg);
+    background-size: cover;
+}
