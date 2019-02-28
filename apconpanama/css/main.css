@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
   overflow-x: hidden;
-  font-size: 1.2vw !important;
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -114,6 +113,35 @@ input[type=text] {
 
 .border-round {
   border-radius: 14px;
+}
+
+.teamvi {
+  position: fixed;
+  top: 20%;
+  right: -180px;
+  padding: 1.5em;
+  border-radius: 1em 0 0 1em;
+  transition: 0.4s all ease !important;
+}
+@media screen and (max-width: 700px) {
+  .teamvi {
+    display: none;
+  }
+}
+.teamvi p {
+  margin: 0;
+  opacity: 0;
+}
+.teamvi:hover {
+  transition: 0.4s all ease !important;
+  right: 0;
+  background: white;
+}
+.teamvi:hover img {
+  background: white;
+}
+.teamvi:hover p {
+  opacity: 1;
 }
 
 .main-bg {

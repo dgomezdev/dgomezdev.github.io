@@ -418,10 +418,26 @@
         </section>
 
 
-        <div class="container bg-primary text-light padd border-round">
+        <div class="container bg-primary text-light padd border-round text-center">
             <h2 class="text-center">SOPORTE</h2>
             <p class="text-center">Utilice la herramienta TeamViewer para poder asistirle remotamente con nuestro equipo técnico para poder evaluar su consulta y así podamos dar una solución satisfactoria a su problema.</p>   
+            <a href="https://get.teamviewer.com/g8a4t3y" target="_blank" class="btn btn-secondary">Descargar TeamViewer</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#asisbox">
+                        Asistencia Box.com
+                </button>
+                
+
         </div>
+
+        <!-- TEAM VIEWER LINK
+        ============================================================ -->
+            <a href="#" class="teamvi">
+                <img style="display: block;" src="img/logo-teamviewer-blue.png" alt="logo asistencia teamviewer">
+                <p>Descargar Soporte</p>
+            </a>
+        <!-- TEAM VIEWER LINK END
+        ============================================================ -->
 
 
         <footer class="footer">
@@ -466,6 +482,27 @@
             <p class="text-light text-center">© Apcon Consulting Inc. 2019 | Todos los derechos reservados </p>
         </div>
 
+                        <!-- Modal -->
+                        <div class="modal fade" id="asisbox" tabindex="-1" role="dialog" aria-labelledby="asisboxLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="asisboxLabel">Asistencia Box.com</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                            <!--box.com -->
+                                            <iframe width="100%" height="608px" frameborder="0" src="https://app.box.com/embed_widget/s/jp6j3rn7mwy6w857p8xi0og6deecxn19?view=list&amp;sort=name&amp;direction=ASC&amp;theme=gray"></iframe>
+                                            <!-- box.com -->
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        <!-- end modal -->
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -475,17 +512,19 @@
     new WOW().init();
     </script>
 
-<!-- ClickDesk Live Chat Service for websites
-<script type='text/javascript'>
-    var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyDwsSBXVzZXJzGO3L0N4IDA');
-    var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 
-    'http://my.clickdesk.com/clickdesk-ui/browser/');
-    var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-    var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
-    glcspt.async = true; glcspt.src = glcpath + 'livechat-new.js';
-    var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
-    </script>
-    End of ClickDesk -->
+    
+        <!-- ClickDesk Live Chat Service for websites -->
+        <script type='text/javascript'>
+            var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyDwsSBXVzZXJzGO3L0N4IDA');
+            var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 
+            'http://my.clickdesk.com/clickdesk-ui/browser/');
+            var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+            var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
+            glcspt.async = true; glcspt.src = glcpath + 'livechat-new.js';
+            var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
+            </script>
+            <!-- End of ClickDesk -->
+
     
 
     

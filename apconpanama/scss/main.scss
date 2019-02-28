@@ -12,7 +12,6 @@ $gris: #646464;
 
 body{
     overflow-x: hidden;
-    font-size: 1.2vw !important;
     color: rgba(0, 0, 0, 0.9);
 }
 
@@ -135,6 +134,36 @@ input[type="text"]{
 .border-round{
     border-radius: 14px;
 }
+
+
+.teamvi{
+    @media screen and (max-width: 700px){
+        display: none;
+    }
+    position: fixed;
+    top: 20%;
+    right: -180px;
+    padding: 1.5em;
+    border-radius: 1em 0 0 1em;
+    transition: .4s all ease !important;
+    p{
+        margin: 0;
+        opacity: 0;
+    }
+
+    &:hover{
+        transition: .4s all ease !important;
+        right: 0;
+        background: white;
+        img{
+            background: white;
+        }
+        p{
+            opacity: 1;
+        }
+    }
+}
+
 
 @import "part/main-section";
 @import "part/nuestro-equipo";
