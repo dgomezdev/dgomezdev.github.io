@@ -1,5 +1,8 @@
 .vision-mision{
-    height: 100vh;
+
+    @media screen and (min-width: 1024px){
+        min-height: 100vh;
+    }
     @media screen and (min-width: 1366px){
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -8,11 +11,18 @@
             margin: auto;
         }
     }
+    @media screen and (max-width: 500px){
+        width: 90%;
+        margin: auto;
+    }
 }
 
 .mision-vision-gridy{
     display: grid;
     grid-template-columns: 150px 1fr;
+    @media screen and (max-width: 500px){
+        grid-template-columns: 110px 1fr;
+    }
     min-height: 150px;
     margin-bottom: 1em;
     .mision-vision-gridy-text{

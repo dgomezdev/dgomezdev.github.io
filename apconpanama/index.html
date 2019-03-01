@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
 </head>
-<body>
+<body class="">
         <!-- Navbar
         ==================================================== --> 
         <div class="row fixed-top bg-white">
                 <div class="container">
                         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo"></a>
+                                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
                                 
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                   <span class="navbar-toggler-icon"></span>
@@ -23,14 +23,23 @@
                                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 
                                   <div class="navbar-nav">
-                                    <a class="nav-item nav-link active" href="#">Inicio</a>
-                                    <a class="nav-item nav-link" href="#">Quienes Somos</a>
+                                    <a class="nav-item nav-link active" href="index.html">Inicio</a>
+                                    <a class="nav-item nav-link" href="#Quienes-Somos">Quienes Somos</a>
                                     <a class="nav-item nav-link" href="#">Producto</a>
-                                    <a class="nav-item nav-link" href="#">Blog</a>
-                                    <a class="nav-item nav-link" href="#">Contacto</a>
+                                    <a class="nav-item nav-link" href="blog.html">Blog</a>
+                                    <a class="nav-item nav-link" href="contacto.html">Contacto</a>
                                   </div>
 
-                                  <button class="btn btn-primary font-weight-bold nav-btn">Acción</button>
+                                  
+                                <!-- SOCIAL BAR -->
+                                
+                                <div class="socials">
+                                        <a class="social" href="#"><i class="fab fa-twitter-square"></i></a>
+                                        <a class="social" href="#"><i class="fab fa-instagram"></i></a>
+                                        <a class="social" href="#"><i class="fab fa-facebook-square"></i></a>
+                                </div>
+                                
+                                <!--END SOCIAL BAR-->
                                 </div> 
                         </nav>
                 </div>        
@@ -41,6 +50,7 @@
 
         <div class="main-bg wow fadeIn">
                 <div class="contenedor">
+                    
                         <div class="d-flex justify-content-center align-items-center">
                                 <div class="wow fadeInLeftBig">
                                     <h1 class="font-weight-bolder">Automatización <br>de
@@ -87,7 +97,7 @@
 
         <!-- VISION Y MISION 
         ========================================-->
-        <section class="vision-mision">
+        <section class="vision-mision" id="Quienes-Somos">
             <div class="wow fadeInLeftº" style="
                 background-image: url(img/4.jpg);
                 background-size: cover;
@@ -324,7 +334,7 @@
                     
                     <div>
                         <form action="post">
-                                <input type="text" placeholder="Su Dirección Email">
+                                <input class="suscp" type="text" placeholder="Su Dirección Email">
                                 <input class="input-btn" type="submit" value="Suscribirse">
                         </form>
                         <p>*Nunca compartiremos tu dirección. 
@@ -438,46 +448,44 @@
             </a>
         <!-- TEAM VIEWER LINK END
         ============================================================ -->
-
-
         <footer class="footer">
-            <div>
-                <h2>Enlaces De Interés</h2>
-                <ul>
-                    <li><a href="#">Lorem Ipsum Lorem</a></li>
-                    <li><a href="#">Lorem Ipsum Lorem</a></li>
-                    <li><a href="#">Lorem Ipsum Lorem</a></li>
-                    <li><a href="#">Lorem Ipsum Lorem</a></li>
-                </ul>
-            </div>
-            <div>
-                    <h2>Enlaces De Interés</h2>
-                    <ul>
-                        <li><a href="#">Lorem Ipsum Lorem</a></li>
-                        <li><a href="#">Lorem Ipsum Lorem</a></li>
-                        <li><a href="#">Lorem Ipsum Lorem</a></li>
-                        <li><a href="#">Lorem Ipsum Lorem</a></li>
-                    </ul>
+                <div>
+                    <h3>Enlaces De Interés</h3>
+                    <p>
+                        <a href="#">Políticas De Privacidad</a><br>
+                        <a href="#">Preguntas Frecuentes</a><br>
+            
+                    </p>
                 </div>
                 <div>
-                        <h2>Enlaces De Interés</h2>
+                <h3>Entradas Recientes</h3>
+                <ul class="text-left" style="padding-left: 15px;">
+                    <li><a href="#">Facturación Electrónica en Panamá Sistema Alegra.</a><br></li>
+                    <li><a href="#">Video de como funciona el módulo de Impresion de Cheques</a><br></li>
+                    <li><a href="#">Anexos para la Declaración de Renta</a><br></li>
+                    <li><a href="#">Lorem Ipsum Lorem</a><br></li>
+                </ul>
+                </div>
+            
+                <div>
+                    <h3>Información de Contacto</h3>
+                    <p>Panamá, República de Panamá<br>
+                        <a href="#">info@apconconsulting.com</a><br>
+                        (+507) 398-0498
+                    </p>
+                </div>
+            
+                <div>
+                        <h3>Enlaces De Interés</h3>
                         <ul>
-                            <li><a href="#">Lorem Ipsum Lorem</a></li>
-                            <li><a href="#">Lorem Ipsum Lorem</a></li>
-                            <li><a href="#">Lorem Ipsum Lorem</a></li>
-                            <li><a href="#">Lorem Ipsum Lorem</a></li>
+                        <li><a href="#">Lorem Ipsum Lorem</a></li>
+                        <li><a href="#">Lorem Ipsum Lorem</a></li>
+                        <li><a href="#">Lorem Ipsum Lorem</a></li>
+                        <li><a href="#">Lorem Ipsum Lorem</a></li>
                         </ul>
-                    </div>
-                    <div>
-                            <h2>Enlaces De Interés</h2>
-                            <ul>
-                                <li><a href="#">Lorem Ipsum Lorem</a></li>
-                                <li><a href="#">Lorem Ipsum Lorem</a></li>
-                                <li><a href="#">Lorem Ipsum Lorem</a></li>
-                                <li><a href="#">Lorem Ipsum Lorem</a></li>
-                            </ul>
                         </div>
-        </footer>
+            
+                </footer>
         <div class="copy text-center bg-dark">
             <p class="text-light text-center">© Apcon Consulting Inc. 2019 | Todos los derechos reservados </p>
         </div>
@@ -515,6 +523,8 @@
     
         <!-- ClickDesk Live Chat Service for websites -->
         <script type='text/javascript'>
+        var w = $( window ).width();
+        if(w > 618){
             var _glc =_glc || []; _glc.push('all_ag9zfmNsaWNrZGVza2NoYXRyDwsSBXVzZXJzGO3L0N4IDA');
             var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/clickdesk-ui/browser/' : 
             'http://my.clickdesk.com/clickdesk-ui/browser/');
@@ -522,11 +532,27 @@
             var glcspt = document.createElement('script'); glcspt.type = 'text/javascript'; 
             glcspt.async = true; glcspt.src = glcpath + 'livechat-new.js';
             var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
+        }
             </script>
             <!-- End of ClickDesk -->
 
+    <!-- Zenbox -->
+    <script type="text/javascript">
+        //<![CDATA[
+        if (typeof(Zenbox) !== "undefined") { 
+        Zenbox.init({   
+        dropboxID:   "20283997",
+        url: "https://apcon.zendesk.com",
+        tabTooltip:  "Soporte",
+        tabImageURL: "https://assets.zendesk.com/external/zenbox/images/tab_es_support.png",
+        tabColor:    "black",             
+        tabPosition: "Left" 
+        });     
+        }
+        //]]>
+        </script>
+    <!-- End of Zenbox -->
     
-
     
 </body>
 </html>

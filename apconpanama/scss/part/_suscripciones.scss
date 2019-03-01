@@ -1,5 +1,7 @@
 .suscripciones{
-    height: 70vh;
+    @media screen and (min-width: 1024px){
+        min-height: 70vh;
+    }
     margin-bottom: 5%;
     @media screen and (min-width: 1366px){
         display: grid;
@@ -10,6 +12,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 500px){
+            display: inherit;
+            padding: 40% 2%;
+        }
         h2{
             font-size: 54px;
             color: white !important;

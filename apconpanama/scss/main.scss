@@ -62,7 +62,7 @@ p{
 }
 
 
-input[type="text"]{
+.suscp{
     width: 400px;
     height: 45px;
     padding-left: 1em;
@@ -101,18 +101,24 @@ input[type="text"]{
 }
 
 .footer{
+    @media screen and (min-width:  1024px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+       
+    }
     padding: 150px 0;
     padding-bottom: 80px;
     background: #111;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
     color: white;
     a{
         color: rgb(255, 255, 255);
         &:hover{
             color: $amarillo
         }
+    }
+    @media screen and (max-width: 500px){
+        text-align: justify;
     }
 
 }
@@ -133,6 +139,9 @@ input[type="text"]{
 
 .border-round{
     border-radius: 14px;
+    @media screen and (max-width: 500px){
+        border-radius: 0;
+    }
 }
 
 
@@ -164,6 +173,119 @@ input[type="text"]{
     }
 }
 
+.contacto-cont{
+    height: 100vh;
+    @media screen and (min-width: 1024px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .form-cont{
+            padding: 10% 20%;
+        }
+    }
+}
+
+
+.blog-contenedor{
+    width: 95%;
+    margin: auto;
+    @media screen and (min-width: 1024px){
+        width: 80%;
+    }
+    @media screen and (min-width: 1440px){
+        width: 1366px;
+    }
+}
+
+.top-post{
+    padding: 2em 0;
+    min-height: 300px;
+    margin: 2em 0;
+    
+    .post-img{
+        height: 300px;
+        @media screen and (min-width: 1366px){
+            height: 480px;
+        }
+    }
+    .post-text{
+        padding: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1024px){
+        display: grid;
+        grid-template-columns: 1fr .4fr;
+        .post-img{
+            height: auto;
+        }
+        &:hover{
+            background: rgb(219, 219, 219);
+        }
+ 
+    }
+}
+
+.med-post{
+    padding: 2em 0;
+    min-height: 300px;
+    margin: 2em 0;
+    .post-img{
+        height: 300px;
+    }
+    .post-text{
+        padding: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1024px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .med-cont{
+            margin: 1em;
+            &:hover{
+                background: rgb(219, 219, 219);
+            }
+        }
+        .post-img{
+            height: 250px;
+        }
+
+    }
+}
+
+.low-post{
+    padding: 2em 0;
+    margin: 2em 0;
+
+    .post-text{
+        padding: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1024px){
+        .low-cont{
+            display: grid;
+            grid-template-columns: .4fr 1fr;
+            direction: rtl;
+            margin: 1em 0;
+            p{
+                text-align: left;
+            }
+            &:hover{
+                background: rgb(219, 219, 219);
+            }
+        }
+        .post-img{
+            height: 250px;
+        }
+    }
+}
 
 @import "part/main-section";
 @import "part/nuestro-equipo";
@@ -172,6 +294,7 @@ input[type="text"]{
 @import "part/servicios";
 @import "part/entrenamientos";
 @import "part/suscripciones";
+@import "part/socials";
 
 // Custom.scss
 // Option A: Include all of Bootstrap

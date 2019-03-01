@@ -1,7 +1,9 @@
 .impresoras-fiscales{
    
     .container{
+       @media screen and (min-width: 1024px){
         min-height: 100vh;
+       }
         @media screen and (min-width: 1366px){
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -12,5 +14,15 @@
                 width: 500px;
             }
         }
+    }
+
+    .impresoras-fiscales-text{
+        @media screen and (max-width: 500px){
+            display: inherit !important;
+            img{
+                width: 100% !important;
+            }
+        }
+
     }
 }

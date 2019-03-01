@@ -1,6 +1,6 @@
 .nuestro-equipo{
-    height: 100vh;
-    
+    min-height: 100vh;
+
     .container{
         @media screen and (min-width: 1366px){
             display: grid;
@@ -15,5 +15,11 @@
         height: 480px;
         width: 480px;
         border-radius: 50%;
+    }
+    @media screen and (max-width: 500px){
+        padding: 1em;
+        .circle{
+            border-radius: 0;
+        }
     }
 }

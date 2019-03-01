@@ -1,9 +1,9 @@
 .main-bg{
-    background-image: url(../img/02.png);
-    background-position-x: 85%;
-    background-position-y: 62%;
+    background-image: url(../img/022.png);
+    background-position-x: 90%;
+    background-position-y: center;
     background-repeat: no-repeat;
-    background-size: 545px;
+    background-size: 700px;
     h1{
         font-size: 64px;
     }
@@ -19,6 +19,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         min-height: 100vh;
+        }
+    }
+    @media screen and (max-width: 520px){
+        background-size: contain;
+        background-position-y: bottom;
+        h1{
+            font-size: 12vw;
         }
     }
 
