@@ -21,6 +21,14 @@
         min-height: 100vh;
         }
     }
+    @media screen and (max-width: 768px){
+        background-size: 70%;
+        background-position-y: bottom;
+    
+        h1{
+            font-size: 12vw;
+        }
+    }
     @media screen and (max-width: 520px){
         background-size: contain;
         background-position-y: bottom;
@@ -28,6 +36,7 @@
             font-size: 12vw;
         }
     }
+
 
 }
 
