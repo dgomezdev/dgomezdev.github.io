@@ -1,0 +1,38 @@
+.page-productos{
+    margin-top: 96px;
+    min-height: 100vh;
+    background: rgb(231, 231, 231);
+}
+
+.page-productos-cont{
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
+    @media screen and (min-width: 1024px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.producto{
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    margin: 1em .5em;
+    background: white;
+    h2{
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .producto-text{
+        padding: 1.4em;
+    }
+}
+
+.single-product{
+    height: 600px;
+    padding: 2em 0;
+    @media screen and (min-width: 1024px){
+        display: grid;
+        grid-template-columns: .6fr 1fr;
+    }
+}
