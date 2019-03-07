@@ -46,3 +46,9 @@
     //background: url(../img/0.jpg);
     background-size: cover;
 }
+
+.main-section-top{
+    @media screen and (max-width: 1024px){
+        margin-top: 80px;
+    }
+}

@@ -10,6 +10,10 @@ $verde: #185F53;
 $amarillo: #FCC03E;
 $gris: #646464;
 
+*{
+    transition: all .4s ease;
+}
+
 body{
     overflow-x: hidden;
     color: rgba(0, 0, 0, 0.9);
@@ -63,7 +67,7 @@ p{
 
 
 .suscp{
-    width: 400px;
+    width: 100%;
     height: 45px;
     padding-left: 1em;
 }
@@ -120,6 +124,10 @@ p{
     @media screen and (max-width: 500px){
         text-align: justify;
     }
+    div{
+        width: 90%;
+        margin: auto;
+    }
 
 }
 
@@ -175,6 +183,9 @@ p{
 
 .contacto-cont{
     height: 100vh;
+    @media screen and (max-width: 999px){
+        margin-top: 80px;
+    }
     @media screen and (min-width: 1024px){
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -287,6 +298,17 @@ p{
     }
 }
 
+.fixdivaja{
+    background-image: url(img/5.jpg);
+    background-size: cover;
+    background-position: center;
+    @media screen and (min-width: 1024px) {
+        height: 480px;
+        width: 480px;
+        margin: auto;
+    }
+}
+
 .mt-80{
     margin-top: 96px;
 }
@@ -300,7 +322,6 @@ p{
 @import "part/suscripciones";
 @import "part/socials";
 @import "part/page-productos";
-
 // Custom.scss
 // Option A: Include all of Bootstrap
 
